@@ -55,37 +55,39 @@ def json_load():
 
     num = 1
     key = f"{xml['name']}_heard_users"
-    for station in data["DATA"][key]["STATION"]:
-        temp = station
-        parts = station["Callsign"].split("/")
-        temp["Call"] = parts[0].strip()
-        temp["Suffix"] = parts[1].strip() if len(parts) > 1 else ""
-        temp["Flag"] = get_flag(temp["Call"])
+    if key in data["DATA"] and data["DATA"][key] and "STATION" in data["DATA"][key]:
+        for station in data["DATA"][key]["STATION"]:
+            temp = station
+            parts = station["Callsign"].split("/")
+            temp["Call"] = parts[0].strip()
+            temp["Suffix"] = parts[1].strip() if len(parts) > 1 else ""
+            temp["Flag"] = get_flag(temp["Call"])
 
-        fecha_str = temp["LastHeardTime"]
-        fecha_obj = datetime.strptime(fecha_str, "%A %a %b %d %H:%M:%S %Y")
-        temp["LastHeardTime"] = int(fecha_obj.timestamp())
+            fecha_str = temp["LastHeardTime"]
+            fecha_obj = datetime.strptime(fecha_str, "%A %a %b %d %H:%M:%S %Y")
+            temp["LastHeardTime"] = int(fecha_obj.timestamp())
 
-        heard_users[num] = temp
-        num += 1
+            heard_users[num] = temp
+            num += 1
 
     num = 1
     key = f"{xml['name']}_linked_nodes"
-    for node in data["DATA"][key]["NODE"]:
-        temp = node
+    if key in data["DATA"] and data["DATA"][key] and "NODE" in data["DATA"][key]:
+        for node in data["DATA"][key]["NODE"]:
+            temp = node
 
-        temp["Flag"] = get_flag(temp["Callsign"])
+            temp["Flag"] = get_flag(temp["Callsign"])
 
-        fecha_str = temp["ConnectTime"]
-        fecha_obj = datetime.strptime(fecha_str, "%A %a %b %d %H:%M:%S %Y")
-        temp["ConnectTime"] = int(fecha_obj.timestamp())
+            fecha_str = temp["ConnectTime"]
+            fecha_obj = datetime.strptime(fecha_str, "%A %a %b %d %H:%M:%S %Y")
+            temp["ConnectTime"] = int(fecha_obj.timestamp())
 
-        fecha_str = temp["LastHeardTime"]
-        fecha_obj = datetime.strptime(fecha_str, "%A %a %b %d %H:%M:%S %Y")
-        temp["LastHeardTime"] = int(fecha_obj.timestamp())
+            fecha_str = temp["LastHeardTime"]
+            fecha_obj = datetime.strptime(fecha_str, "%A %a %b %d %H:%M:%S %Y")
+            temp["LastHeardTime"] = int(fecha_obj.timestamp())
 
-        linked_nodes[num] = temp
-        num += 1
+            linked_nodes[num] = temp
+            num += 1
 
     data["NAME"] = xml["name"]
     return { "heard_users": heard_users,  "linked_nodes": linked_nodes}
