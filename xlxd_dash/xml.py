@@ -54,7 +54,8 @@ def json_load():
     linked_nodes = {}
 
     num = 1
-    for station in data["DATA"][f"{xml["name"]}_heard_users"]["STATION"]:
+    key = f"{xml['name']}_heard_users"
+    for station in data["DATA"][key]["STATION"]:
         temp = station
         parts = station["Callsign"].split("/")
         temp["Call"] = parts[0].strip()
@@ -69,7 +70,8 @@ def json_load():
         num += 1
 
     num = 1
-    for node in data["DATA"][f"{xml["name"]}_linked_nodes"]["NODE"]:
+    key = f"{xml['name']}_linked_nodes"
+    for node in data["DATA"][key]["NODE"]:
         temp = node
 
         temp["Flag"] = get_flag(temp["Callsign"])
