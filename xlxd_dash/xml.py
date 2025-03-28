@@ -49,7 +49,7 @@ def get_flag(distintiva):
 
 def json_load():
     xml = xml_load()
-    data = xmltodict.parse(xml["data"])
+    data = xmltodict.parse(xml["data"], force_list=("STATION", "NODE"))
     heard_users = {}
     linked_nodes = {}
 
