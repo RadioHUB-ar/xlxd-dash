@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  
+  <!-- Meta básica -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{name}} Dashboard</title>
+
+  <meta name="description" content="{{description}}">
+  <meta name="keywords" content="{{keywords}}">
+  <meta name="author" content="RadioHUB Team">
+
+  <!-- Open Graph (para compartir en redes sociales) -->
+  <meta property="og:title" content="{{name}} Dashboard">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:image" content="{{dashURL}}/static/img/preview.png">
+  <meta property="og:url" content="{{dashURL}}">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{name}} Dashboard">
+  <meta name="twitter:description" content="{{description}}">
+  <meta name="twitter:image" content="{{dashURL}}/static/img/preview.png">
+
+  <link rel="icon" href="/static/img/favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+    uptime = {{uptime}}
+  </script>
+  <link rel="stylesheet" href="/static/css/app.css">
+  <script src="/static/js/app.js" defer></script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
+  <div class="max-w-5xl mx-auto p-2">
+    <div class="flex justify-between items-center mb-4">
+      <div class="flex items-center gap-4">
+        <img src="/static/img/logo.png" alt="Logo" class="h-10 w-auto">
+        <h1 class="text-2xl sm:text-3xl font-bold">{{name}}</h1>
+      </div>
+      <div class="flex gap-2">
+        <button id="toggle-refresh" class="px-2 py-1 text-xs sm:text-sm border rounded">⏸️</button>
+        <button id="toggle-dark" class="px-2 py-1 text-xs sm:text-sm border rounded">🌙</button>
+      </div>
+    </div>
+
+    {% if links %}
+    <nav class="bg-gray-100 dark:bg-gray-800 px-4 py-2 shadow-md sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto flex gap-4 text-sm">
+        {% for link in links %}
+        <a href="{{ link.url }}" target="_blank" class="hover:underline">
+          {{ link.name }}
+        </a>
+        {% endfor %}
+      </div>
+    </nav>
+    {% endif %}
+
+    <div class="max-w-5xl mx-auto space-y-6">
+      <div id="users_div" class="hidden overflow-x-auto">
+        <table class="table-auto w-full table-auto w-full border border-gray-200 dark:border-gray-700">
+          <thead class="bg-gray-100 dark:bg-gray-800">
+            <tr><th colspan="100%">Users</th></tr>
+            <tr>
+              <th class="px-2 py-1 text-xs sm:text-sm hidden md:table-cell">#</th>
+              <th class="px-2 py-1 text-xs sm:text-sm hidden md:table-cell">🏳️</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">Callsign</th>
+              <th class="px-2 py-1 text-xs sm:text-sm hidden md:table-cell">Suffix</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">🛰️</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">Via / Peer</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">Last heard</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">On</th>
+            </tr>
+          </thead>
+          <tbody id="users_table" class="text-sm">
+          </tbody>    
+        </table>
+      </div>
+
+      <div id="nodes_div" class="hidden overflow-x-auto">
+        <table class="table-auto w-full table-auto w-full border border-gray-200 dark:border-gray-700">
+          <thead class="bg-gray-100 dark:bg-gray-800">
+            <tr><th colspan="100%">Nodes</th></tr>
+            <tr>
+              <th class="px-2 py-1 text-xs sm:text-sm hidden md:table-cell">#</th>
+              <th class="px-2 py-1 text-xs sm:text-sm hidden md:table-cell">🏳️</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">DV Station</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">Last Heard</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">Linked</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">Protocol</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">On</th>
+            </tr>
+          </thead>
+          <tbody id="nodes_table" class="text-sm">
+          </tbody>    
+        </table>
+      </div>
+
+      <div id="peers_div" class="hidden overflow-x-auto">
+        <table class="table-auto w-full table-auto w-full border border-gray-200 dark:border-gray-700">
+          <thead class="bg-gray-100 dark:bg-gray-800">
+            <tr><th colspan="100%">Peers</th></tr>
+            <tr>
+              <th class="px-2 py-1 text-xs sm:text-sm hidden md:table-cell">#</th>
+              <th class="px-2 py-1 text-xs sm:text-sm hidden md:table-cell">🏳️</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">DV Station</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">Last Heard</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">Linked</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">Protocol</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">On</th>
+            </tr>
+          </thead>
+          <tbody id="peers_table" class="text-sm">
+          </tbody>    
+        </table>
+      </div>
+
+      <div class="overflow-x-auto max-w-3xl mx-auto my-6">
+        <table class="w-full table-auto border border-gray-300 dark:border-gray-700 text-sm">
+          <thead>
+            <tr>
+              <th colspan="2" class="text-left px-4 py-2 bg-gray-100 dark:bg-gray-800">
+                Server Info
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t border-gray-300 dark:border-gray-700">
+              <td class="bg-gray-100 dark:bg-gray-800 px-4 py-2">Name</td>
+              <td class="bg-white dark:bg-gray-900 font-medium px-4 py-2 whitespace-nowrap">{{name}}</td>
+            </tr>
+            <tr class="border-t border-gray-300 dark:border-gray-700">
+              <td class="bg-gray-100 dark:bg-gray-800 px-4 py-2">Comment</td>
+              <td class="bg-white dark:bg-gray-900 font-medium px-4 py-2 whitespace-nowrap">{{comment}}</td>
+            </tr>
+            <tr class="border-t border-gray-300 dark:border-gray-700">
+              <td class="bg-gray-100 dark:bg-gray-800 px-4 py-2">Country</td>
+              <td class="bg-white dark:bg-gray-900 font-medium px-4 py-2 whitespace-nowrap">{{country}}</td>
+            </tr>
+            <tr class="border-t border-gray-300 dark:border-gray-700">
+              <td class="bg-gray-100 dark:bg-gray-800 px-4 py-2">Author</td>
+              <td class="bg-white dark:bg-gray-900 font-medium px-4 py-2 whitespace-nowrap">{{author}}</td>
+            </tr>
+            <tr class="border-t border-gray-300 dark:border-gray-700">
+              <td class="bg-gray-100 dark:bg-gray-800 px-4 py-2">Binary Version</td>
+              <td class="bg-white dark:bg-gray-900 font-medium px-4 py-2 whitespace-nowrap">{{version}}</td>
+            </tr>
+            <tr class="border-t border-gray-300 dark:border-gray-700">
+              <td class="bg-gray-100 dark:bg-gray-800 px-4 py-2">Dash Version</td>
+              <td class="bg-white dark:bg-gray-900 font-medium px-4 py-2 whitespace-nowrap">{{dash_version}}</td>
+            </tr>
+            <tr class="border-t border-gray-300 dark:border-gray-700">
+              <td class="bg-gray-100 dark:bg-gray-800 px-4 py-2">Service Uptime</td>
+              <td id="server_uptime" class="bg-white dark:bg-gray-900 font-medium px-4 py-2 whitespace-nowrap"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</body>
+{% if footer %}
+<footer class="w-full text-center py-4 text-sm text-gray-500 dark:text-gray-400 bottom-0">
+  {{footer|safe}}<br><br>
+</footer>
+{% endif %}
+</html>

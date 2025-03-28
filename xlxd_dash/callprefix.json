@@ -1,0 +1,4842 @@
+{
+  "YA": [
+    "AF",
+    "Afghanistan"
+  ],
+  "T6": [
+    "AF",
+    "Afghanistan"
+  ],
+  "3B6": [
+    "MU",
+    "Agalega & St. Brandon Island"
+  ],
+  "3B7": [
+    "MU",
+    "Agalega & St. Brandon Island"
+  ],
+  "OH0": [
+    "AX",
+    "Aland Islands"
+  ],
+  "AL": [
+    "US",
+    "Alaska"
+  ],
+  "KL": [
+    "US",
+    "Alaska"
+  ],
+  "NL": [
+    "US",
+    "Alaska"
+  ],
+  "WL": [
+    "US",
+    "Alaska"
+  ],
+  "ZA": [
+    "AL",
+    "Albania"
+  ],
+  "7T": [
+    "DZ",
+    "Algeria"
+  ],
+  "7U": [
+    "DZ",
+    "Algeria"
+  ],
+  "7V": [
+    "DZ",
+    "Algeria"
+  ],
+  "7W": [
+    "DZ",
+    "Algeria"
+  ],
+  "7X": [
+    "DZ",
+    "Algeria"
+  ],
+  "7Y": [
+    "DZ",
+    "Algeria"
+  ],
+  "KH8": [
+    "AS",
+    "American Samoa"
+  ],
+  "VU4": [
+    "IN",
+    "Andaman & Nicobar Islands"
+  ],
+  "C3": [
+    "AD",
+    "Andorra"
+  ],
+  "D2": [
+    "AO",
+    "Angola"
+  ],
+  "D3": [
+    "AO",
+    "Angola"
+  ],
+  "VP2E": [
+    "AI",
+    "Anguilla"
+  ],
+  "3C0": [
+    "GQ",
+    "Annobon Island"
+  ],
+  "CE9": [
+    "AQ",
+    "Antarctica"
+  ],
+  "KC4A": [
+    "AQ",
+    "Antarctica"
+  ],
+  "KC4U": [
+    "AQ",
+    "Antarctica"
+  ],
+  "V2": [
+    "AG",
+    "Antigua and Barbuda"
+  ],
+  "LO": [
+    "AR",
+    "Argentina"
+  ],
+  "LP": [
+    "AR",
+    "Argentina"
+  ],
+  "LQ": [
+    "AR",
+    "Argentina"
+  ],
+  "LR": [
+    "AR",
+    "Argentina"
+  ],
+  "LS": [
+    "AR",
+    "Argentina"
+  ],
+  "LT": [
+    "AR",
+    "Argentina"
+  ],
+  "LU": [
+    "AR",
+    "Argentina"
+  ],
+  "LV": [
+    "AR",
+    "Argentina"
+  ],
+  "LW": [
+    "AR",
+    "Argentina"
+  ],
+  "EK": [
+    "AM",
+    "Armenia"
+  ],
+  "P4": [
+    "AW",
+    "Aruba"
+  ],
+  "ZD8": [
+    "SH",
+    "Ascension Island"
+  ],
+  "UA0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UA8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UA9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UB0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UB8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UB9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UC0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UC8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UC9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UD0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UD8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UD9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UE0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UE8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UE9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UF0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UF8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UF9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UG0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UG8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UG9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UH0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UH8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UH9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UI0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UI8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "UI9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RA0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RA8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RA9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RB0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RB8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RB9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RC0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RC8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RC9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RD0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RD8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RD9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RE0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RE8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RE9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RF0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RF8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RF9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RG0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RG8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RG9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RH0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RH8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RH9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RI0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RI8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RI9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RJ0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RJ8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RJ9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RK0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RK8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RK9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RL0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RL8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RL9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RM0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RM8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RM9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RN0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RN8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RN9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RO0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RO8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RO9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RP0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RP8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RP9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RQ0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RQ8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RQ9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RR0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RR8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RR9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RS0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RS8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RS9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RT0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RT8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RT9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RU0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RU8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RU9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RV0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RV8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RV9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RW0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RW8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RW9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RX0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RX8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RX9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RY0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RY8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RY9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RZ0": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RZ8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "RZ9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "R8": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "R9": [
+    "RU",
+    "Asiatic Russia"
+  ],
+  "VK": [
+    "AU",
+    "Australia"
+  ],
+  "AX": [
+    "AU",
+    "Australia"
+  ],
+  "OE": [
+    "AT",
+    "Austria"
+  ],
+  "4J": [
+    "AZ",
+    "Azerbaijan"
+  ],
+  "4K": [
+    "AZ",
+    "Azerbaijan"
+  ],
+  "CU": [
+    "PT",
+    "Portugal"
+  ],
+  "C6": [
+    "BS",
+    "Bahamas"
+  ],
+  "A9": [
+    "BH",
+    "Bahrain"
+  ],
+  "KH1": [
+    "US",
+    "Baker & Howland Islands"
+  ],
+  "EA6": [
+    "ES",
+    "Balearic Islands"
+  ],
+  "EB6": [
+    "ES",
+    "Balearic Islands"
+  ],
+  "EC6": [
+    "ES",
+    "Balearic Islands"
+  ],
+  "ED6": [
+    "ES",
+    "Balearic Islands"
+  ],
+  "EE6": [
+    "ES",
+    "Balearic Islands"
+  ],
+  "EF6": [
+    "ES",
+    "Balearic Islands"
+  ],
+  "EG6": [
+    "ES",
+    "Balearic Islands"
+  ],
+  "EH6": [
+    "ES",
+    "Balearic Islands"
+  ],
+  "T33": [
+    "KI",
+    "Banaba Island (Ocean Island)"
+  ],
+  "S2": [
+    "BD",
+    "Bangladesh"
+  ],
+  "8P": [
+    "BB",
+    "Barbados"
+  ],
+  "EU": [
+    "BY",
+    "Belarus"
+  ],
+  "EV": [
+    "BY",
+    "Belarus"
+  ],
+  "EW": [
+    "BY",
+    "Belarus"
+  ],
+  "ON": [
+    "BE",
+    "Belgium"
+  ],
+  "OO": [
+    "BE",
+    "Belgium"
+  ],
+  "OP": [
+    "BE",
+    "Belgium"
+  ],
+  "OQ": [
+    "BE",
+    "Belgium"
+  ],
+  "OR": [
+    "BE",
+    "Belgium"
+  ],
+  "OS": [
+    "BE",
+    "Belgium"
+  ],
+  "OT": [
+    "BE",
+    "Belgium"
+  ],
+  "V3": [
+    "BZ",
+    "Belize"
+  ],
+  "TY": [
+    "BJ",
+    "Benin"
+  ],
+  "VP9": [
+    "BM",
+    "Bermuda"
+  ],
+  "A5": [
+    "BT",
+    "Bhutan"
+  ],
+  "CP": [
+    "BO",
+    "Bolivia Plurinational State of"
+  ],
+  "PJ4": [
+    "NL",
+    "Bonaire"
+  ],
+  "E7": [
+    "BA",
+    "Bosnia and Herzegovina"
+  ],
+  "A2": [
+    "BW",
+    "Botswana"
+  ],
+  "3Y": [
+    "BV",
+    "Bouvet Island"
+  ],
+  "PP": [
+    "BR",
+    "Brazil"
+  ],
+  "PQ": [
+    "BR",
+    "Brazil"
+  ],
+  "PR": [
+    "BR",
+    "Brazil"
+  ],
+  "PS": [
+    "BR",
+    "Brazil"
+  ],
+  "PT": [
+    "BR",
+    "Brazil"
+  ],
+  "PU": [
+    "BR",
+    "Brazil"
+  ],
+  "PV": [
+    "BR",
+    "Brazil"
+  ],
+  "PW": [
+    "BR",
+    "Brazil"
+  ],
+  "PX": [
+    "BR",
+    "Brazil"
+  ],
+  "PY": [
+    "BR",
+    "Brazil"
+  ],
+  "ZV": [
+    "BR",
+    "Brazil"
+  ],
+  "ZW": [
+    "BR",
+    "Brazil"
+  ],
+  "ZX": [
+    "BR",
+    "Brazil"
+  ],
+  "ZY": [
+    "BR",
+    "Brazil"
+  ],
+  "ZZ": [
+    "BR",
+    "Brazil"
+  ],
+  "VP2V": [
+    "VG",
+    "Virgin Islands British"
+  ],
+  "V8": [
+    "BN",
+    "Brunei Darussalam"
+  ],
+  "LZ": [
+    "BG",
+    "Bulgaria"
+  ],
+  "XT": [
+    "BF",
+    "Burkina Faso"
+  ],
+  "9U": [
+    "BI",
+    "Burundi"
+  ],
+  "XU": [
+    "KH",
+    "Cambodia"
+  ],
+  "TJ": [
+    "CM",
+    "Cameroon"
+  ],
+  "VA": [
+    "CA",
+    "Canada"
+  ],
+  "VB": [
+    "CA",
+    "Canada"
+  ],
+  "VC": [
+    "CA",
+    "Canada"
+  ],
+  "VD": [
+    "CA",
+    "Canada"
+  ],
+  "VE": [
+    "CA",
+    "Canada"
+  ],
+  "VF": [
+    "CA",
+    "Canada"
+  ],
+  "VG": [
+    "CA",
+    "Canada"
+  ],
+  "VO": [
+    "CA",
+    "Canada"
+  ],
+  "VY": [
+    "CA",
+    "Canada"
+  ],
+  "EA8": [
+    "ES",
+    "Canary Islands"
+  ],
+  "EB8": [
+    "ES",
+    "Canary Islands"
+  ],
+  "EC8": [
+    "ES",
+    "Canary Islands"
+  ],
+  "ED8": [
+    "ES",
+    "Canary Islands"
+  ],
+  "EE8": [
+    "ES",
+    "Canary Islands"
+  ],
+  "EF8": [
+    "ES",
+    "Canary Islands"
+  ],
+  "EG8": [
+    "ES",
+    "Canary Islands"
+  ],
+  "EH8": [
+    "ES",
+    "Canary Islands"
+  ],
+  "D4": [
+    "CV",
+    "Cape Verde"
+  ],
+  "ZF": [
+    "KY",
+    "Cayman Islands"
+  ],
+  "TL": [
+    "CF",
+    "Central African Republic"
+  ],
+  "T31": [
+    "KI",
+    "Central Kiribati (British Phoenix Island)"
+  ],
+  "EA9": [
+    "ES",
+    "Ceuta & Melilla"
+  ],
+  "EB9": [
+    "ES",
+    "Ceuta & Melilla"
+  ],
+  "EC9": [
+    "ES",
+    "Ceuta & Melilla"
+  ],
+  "ED9": [
+    "ES",
+    "Ceuta & Melilla"
+  ],
+  "EE9": [
+    "ES",
+    "Ceuta & Melilla"
+  ],
+  "EF9": [
+    "ES",
+    "Ceuta & Melilla"
+  ],
+  "EG9": [
+    "ES",
+    "Ceuta & Melilla"
+  ],
+  "EH9": [
+    "ES",
+    "Ceuta & Melilla"
+  ],
+  "TT": [
+    "TD",
+    "Chad"
+  ],
+  "VQ9": [
+    "",
+    "Chagos Islands"
+  ],
+  "ZL7": [
+    "NZ",
+    "Chatham Islands"
+  ],
+  "CA": [
+    "CL",
+    "Chile"
+  ],
+  "CB": [
+    "CL",
+    "Chile"
+  ],
+  "CC": [
+    "CL",
+    "Chile"
+  ],
+  "CD": [
+    "CL",
+    "Chile"
+  ],
+  "CE": [
+    "CL",
+    "Chile"
+  ],
+  "XQ": [
+    "CL",
+    "Chile"
+  ],
+  "XR": [
+    "CL",
+    "Chile"
+  ],
+  "BA": [
+    "CN",
+    "China"
+  ],
+  "BB": [
+    "CN",
+    "China"
+  ],
+  "BC": [
+    "CN",
+    "China"
+  ],
+  "BD": [
+    "CN",
+    "China"
+  ],
+  "BE": [
+    "CN",
+    "China"
+  ],
+  "BF": [
+    "CN",
+    "China"
+  ],
+  "BG": [
+    "CN",
+    "China"
+  ],
+  "BH": [
+    "CN",
+    "China"
+  ],
+  "BI": [
+    "CN",
+    "China"
+  ],
+  "BJ": [
+    "CN",
+    "China"
+  ],
+  "BK": [
+    "CN",
+    "China"
+  ],
+  "BL": [
+    "CN",
+    "China"
+  ],
+  "BN": [
+    "CN",
+    "China"
+  ],
+  "BP": [
+    "CN",
+    "China"
+  ],
+  "BQ": [
+    "CN",
+    "China"
+  ],
+  "BR": [
+    "CN",
+    "China"
+  ],
+  "BS": [
+    "CN",
+    "China"
+  ],
+  "BT": [
+    "CN",
+    "China"
+  ],
+  "BY": [
+    "CN",
+    "China"
+  ],
+  "BZ": [
+    "CN",
+    "China"
+  ],
+  "VK9X": [
+    "CX",
+    "Christmas Island"
+  ],
+  "TI9": [
+    "",
+    "Cocos Island"
+  ],
+  "VK9C": [
+    "CC",
+    "Cocos (Keeling) Islands"
+  ],
+  "HJ": [
+    "CO",
+    "Colombia"
+  ],
+  "HK": [
+    "CO",
+    "Colombia"
+  ],
+  "5J": [
+    "CO",
+    "Colombia"
+  ],
+  "5K": [
+    "CO",
+    "Colombia"
+  ],
+  "D6": [
+    "KM",
+    "Comoros"
+  ],
+  "TN": [
+    "CG",
+    "Congo"
+  ],
+  "9Q": [
+    "CD",
+    "Congo the Democratic Republic of the"
+  ],
+  "9R": [
+    "CD",
+    "Congo the Democratic Republic of the"
+  ],
+  "9S": [
+    "CD",
+    "Congo the Democratic Republic of the"
+  ],
+  "9T": [
+    "CD",
+    "Congo the Democratic Republic of the"
+  ],
+  "E5": [
+    "CK",
+    "Cook Islands"
+  ],
+  "TK": [
+    "FR",
+    "Corsica"
+  ],
+  "TI": [
+    "CR",
+    "Costa Rica"
+  ],
+  "TE": [
+    "CR",
+    "Costa Rica"
+  ],
+  "TU": [
+    "CI",
+    "Cote d'Ivoire"
+  ],
+  "SV9": [
+    "GR",
+    "Crete"
+  ],
+  "J49": [
+    "GR",
+    "Crete"
+  ],
+  "9A": [
+    "HR",
+    "Croatia"
+  ],
+  "CO": [
+    "CU",
+    "Cuba"
+  ],
+  "CM": [
+    "CU",
+    "Cuba"
+  ],
+  "PJ2": [
+    "CW",
+    "Curacao"
+  ],
+  "5B": [
+    "CY",
+    "Cyprus"
+  ],
+  "C4": [
+    "CY",
+    "Cyprus"
+  ],
+  "P3": [
+    "CY",
+    "Cyprus"
+  ],
+  "OK": [
+    "CZ",
+    "Czech Republic"
+  ],
+  "OL": [
+    "CZ",
+    "Czech Republic"
+  ],
+  "OU": [
+    "DK",
+    "Denmark"
+  ],
+  "OV": [
+    "DK",
+    "Denmark"
+  ],
+  "OW": [
+    "DK",
+    "Denmark"
+  ],
+  "OZ": [
+    "DK",
+    "Denmark"
+  ],
+  "KP5": [
+    "US",
+    "Desecheo Island"
+  ],
+  "J2": [
+    "DJ",
+    "Djibouti"
+  ],
+  "SV5": [
+    "GR",
+    "Dodecanese"
+  ],
+  "J45": [
+    "GR",
+    "Dodecanese"
+  ],
+  "J7": [
+    "DM",
+    "Dominica"
+  ],
+  "HI": [
+    "DO",
+    "Dominican Republic"
+  ],
+  "9M6": [
+    "MY",
+    "East Malaysia"
+  ],
+  "9M8": [
+    "MY",
+    "East Malaysia"
+  ],
+  "9W6": [
+    "MY",
+    "East Malaysia"
+  ],
+  "9W8": [
+    "MY",
+    "East Malaysia"
+  ],
+  "CE0": [
+    "CL",
+    "Easter Island"
+  ],
+  "T32": [
+    "KI",
+    "Eastern Kiribati (Line Island)"
+  ],
+  "HC": [
+    "EC",
+    "Ecuador"
+  ],
+  "HD": [
+    "EC",
+    "Ecuador"
+  ],
+  "SU": [
+    "EG",
+    "Egypt"
+  ],
+  "YS": [
+    "SV",
+    "El Salvador"
+  ],
+  "HU": [
+    "SV",
+    "El Salvador"
+  ],
+  "2E": [
+    "EN",
+    "England"
+  ],
+  "M0": [
+    "EN",
+    "England"
+  ],
+  "M1": [
+    "EN",
+    "England"
+  ],
+  "M2": [
+    "EN",
+    "England"
+  ],
+  "M3": [
+    "EN",
+    "England"
+  ],
+  "M4": [
+    "EN",
+    "England"
+  ],
+  "M5": [
+    "EN",
+    "England"
+  ],
+  "M6": [
+    "EN",
+    "England"
+  ],
+  "M7": [
+    "EN",
+    "England"
+  ],
+  "M8": [
+    "EN",
+    "England"
+  ],
+  "M9": [
+    "EN",
+    "England"
+  ],
+  "MB": [
+    "EN",
+    "England"
+  ],
+  "MX": [
+    "EN",
+    "England"
+  ],
+  "G0": [
+    "EN",
+    "England"
+  ],
+  "G1": [
+    "EN",
+    "England"
+  ],
+  "G2": [
+    "EN",
+    "England"
+  ],
+  "G3": [
+    "EN",
+    "England"
+  ],
+  "G4": [
+    "EN",
+    "England"
+  ],
+  "G5": [
+    "EN",
+    "England"
+  ],
+  "G6": [
+    "EN",
+    "England"
+  ],
+  "G7": [
+    "EN",
+    "England"
+  ],
+  "G8": [
+    "EN",
+    "England"
+  ],
+  "G9": [
+    "EN",
+    "England"
+  ],
+  "GB": [
+    "EN",
+    "England"
+  ],
+  "GX": [
+    "EN",
+    "England"
+  ],
+  "3C": [
+    "GQ",
+    "Equatorial Guinea"
+  ],
+  "E3": [
+    "ER",
+    "Eritrea"
+  ],
+  "ES": [
+    "EE",
+    "Estonia"
+  ],
+  "ET": [
+    "ET",
+    "Ethiopia"
+  ],
+  "UA1": [
+    "RU",
+    "European Russia"
+  ],
+  "UA3": [
+    "RU",
+    "European Russia"
+  ],
+  "UA4": [
+    "RU",
+    "European Russia"
+  ],
+  "UA5": [
+    "RU",
+    "European Russia"
+  ],
+  "UA6": [
+    "RU",
+    "European Russia"
+  ],
+  "UA7": [
+    "RU",
+    "European Russia"
+  ],
+  "UB1": [
+    "RU",
+    "European Russia"
+  ],
+  "UB2": [
+    "RU",
+    "European Russia"
+  ],
+  "UB3": [
+    "RU",
+    "European Russia"
+  ],
+  "UB4": [
+    "RU",
+    "European Russia"
+  ],
+  "UB5": [
+    "RU",
+    "European Russia"
+  ],
+  "UB6": [
+    "RU",
+    "European Russia"
+  ],
+  "UB7": [
+    "RU",
+    "European Russia"
+  ],
+  "UC1": [
+    "RU",
+    "European Russia"
+  ],
+  "UC2": [
+    "RU",
+    "European Russia"
+  ],
+  "UC3": [
+    "RU",
+    "European Russia"
+  ],
+  "UC4": [
+    "RU",
+    "European Russia"
+  ],
+  "UC5": [
+    "RU",
+    "European Russia"
+  ],
+  "UC6": [
+    "RU",
+    "European Russia"
+  ],
+  "UC7": [
+    "RU",
+    "European Russia"
+  ],
+  "UD1": [
+    "RU",
+    "European Russia"
+  ],
+  "UD2": [
+    "RU",
+    "European Russia"
+  ],
+  "UD3": [
+    "RU",
+    "European Russia"
+  ],
+  "UD4": [
+    "RU",
+    "European Russia"
+  ],
+  "UD5": [
+    "RU",
+    "European Russia"
+  ],
+  "UD6": [
+    "RU",
+    "European Russia"
+  ],
+  "UD7": [
+    "RU",
+    "European Russia"
+  ],
+  "UE1": [
+    "RU",
+    "European Russia"
+  ],
+  "UE2": [
+    "RU",
+    "European Russia"
+  ],
+  "UE3": [
+    "RU",
+    "European Russia"
+  ],
+  "UE4": [
+    "RU",
+    "European Russia"
+  ],
+  "UE5": [
+    "RU",
+    "European Russia"
+  ],
+  "UE6": [
+    "RU",
+    "European Russia"
+  ],
+  "UE7": [
+    "RU",
+    "European Russia"
+  ],
+  "UF1": [
+    "RU",
+    "European Russia"
+  ],
+  "UF2": [
+    "RU",
+    "European Russia"
+  ],
+  "UF3": [
+    "RU",
+    "European Russia"
+  ],
+  "UF4": [
+    "RU",
+    "European Russia"
+  ],
+  "UF5": [
+    "RU",
+    "European Russia"
+  ],
+  "UF6": [
+    "RU",
+    "European Russia"
+  ],
+  "UF7": [
+    "RU",
+    "European Russia"
+  ],
+  "UG1": [
+    "RU",
+    "European Russia"
+  ],
+  "UG2": [
+    "RU",
+    "European Russia"
+  ],
+  "UG3": [
+    "RU",
+    "European Russia"
+  ],
+  "UG4": [
+    "RU",
+    "European Russia"
+  ],
+  "UG5": [
+    "RU",
+    "European Russia"
+  ],
+  "UG6": [
+    "RU",
+    "European Russia"
+  ],
+  "UG7": [
+    "RU",
+    "European Russia"
+  ],
+  "UH1": [
+    "RU",
+    "European Russia"
+  ],
+  "UH2": [
+    "RU",
+    "European Russia"
+  ],
+  "UH3": [
+    "RU",
+    "European Russia"
+  ],
+  "UH4": [
+    "RU",
+    "European Russia"
+  ],
+  "UH5": [
+    "RU",
+    "European Russia"
+  ],
+  "UH6": [
+    "RU",
+    "European Russia"
+  ],
+  "UH7": [
+    "RU",
+    "European Russia"
+  ],
+  "UI1": [
+    "RU",
+    "European Russia"
+  ],
+  "UI2": [
+    "RU",
+    "European Russia"
+  ],
+  "UI3": [
+    "RU",
+    "European Russia"
+  ],
+  "UI4": [
+    "RU",
+    "European Russia"
+  ],
+  "UI5": [
+    "RU",
+    "European Russia"
+  ],
+  "UI6": [
+    "RU",
+    "European Russia"
+  ],
+  "UI7": [
+    "RU",
+    "European Russia"
+  ],
+  "RA1": [
+    "RU",
+    "European Russia"
+  ],
+  "RA3": [
+    "RU",
+    "European Russia"
+  ],
+  "RA4": [
+    "RU",
+    "European Russia"
+  ],
+  "RA5": [
+    "RU",
+    "European Russia"
+  ],
+  "RA6": [
+    "RU",
+    "European Russia"
+  ],
+  "RA7": [
+    "RU",
+    "European Russia"
+  ],
+  "RB1": [
+    "RU",
+    "European Russia"
+  ],
+  "RB2": [
+    "RU",
+    "European Russia"
+  ],
+  "RB3": [
+    "RU",
+    "European Russia"
+  ],
+  "RB4": [
+    "RU",
+    "European Russia"
+  ],
+  "RB5": [
+    "RU",
+    "European Russia"
+  ],
+  "RB6": [
+    "RU",
+    "European Russia"
+  ],
+  "RB7": [
+    "RU",
+    "European Russia"
+  ],
+  "RC1": [
+    "RU",
+    "European Russia"
+  ],
+  "RC2": [
+    "RU",
+    "European Russia"
+  ],
+  "RC3": [
+    "RU",
+    "European Russia"
+  ],
+  "RC4": [
+    "RU",
+    "European Russia"
+  ],
+  "RC5": [
+    "RU",
+    "European Russia"
+  ],
+  "RC6": [
+    "RU",
+    "European Russia"
+  ],
+  "RC7": [
+    "RU",
+    "European Russia"
+  ],
+  "RD1": [
+    "RU",
+    "European Russia"
+  ],
+  "RD2": [
+    "RU",
+    "European Russia"
+  ],
+  "RD3": [
+    "RU",
+    "European Russia"
+  ],
+  "RD4": [
+    "RU",
+    "European Russia"
+  ],
+  "RD5": [
+    "RU",
+    "European Russia"
+  ],
+  "RD6": [
+    "RU",
+    "European Russia"
+  ],
+  "RD7": [
+    "RU",
+    "European Russia"
+  ],
+  "RE1": [
+    "RU",
+    "European Russia"
+  ],
+  "RE2": [
+    "RU",
+    "European Russia"
+  ],
+  "RE3": [
+    "RU",
+    "European Russia"
+  ],
+  "RE4": [
+    "RU",
+    "European Russia"
+  ],
+  "RE5": [
+    "RU",
+    "European Russia"
+  ],
+  "RE6": [
+    "RU",
+    "European Russia"
+  ],
+  "RE7": [
+    "RU",
+    "European Russia"
+  ],
+  "RF1": [
+    "RU",
+    "European Russia"
+  ],
+  "RF2": [
+    "RU",
+    "European Russia"
+  ],
+  "RF3": [
+    "RU",
+    "European Russia"
+  ],
+  "RF4": [
+    "RU",
+    "European Russia"
+  ],
+  "RF5": [
+    "RU",
+    "European Russia"
+  ],
+  "RF6": [
+    "RU",
+    "European Russia"
+  ],
+  "RF7": [
+    "RU",
+    "European Russia"
+  ],
+  "RG1": [
+    "RU",
+    "European Russia"
+  ],
+  "RG2": [
+    "RU",
+    "European Russia"
+  ],
+  "RG3": [
+    "RU",
+    "European Russia"
+  ],
+  "RG4": [
+    "RU",
+    "European Russia"
+  ],
+  "RG5": [
+    "RU",
+    "European Russia"
+  ],
+  "RG6": [
+    "RU",
+    "European Russia"
+  ],
+  "RG7": [
+    "RU",
+    "European Russia"
+  ],
+  "RH1": [
+    "RU",
+    "European Russia"
+  ],
+  "RH2": [
+    "RU",
+    "European Russia"
+  ],
+  "RH3": [
+    "RU",
+    "European Russia"
+  ],
+  "RH4": [
+    "RU",
+    "European Russia"
+  ],
+  "RH5": [
+    "RU",
+    "European Russia"
+  ],
+  "RH6": [
+    "RU",
+    "European Russia"
+  ],
+  "RH7": [
+    "RU",
+    "European Russia"
+  ],
+  "RI1": [
+    "RU",
+    "European Russia"
+  ],
+  "RI2": [
+    "RU",
+    "European Russia"
+  ],
+  "RI3": [
+    "RU",
+    "European Russia"
+  ],
+  "RI4": [
+    "RU",
+    "European Russia"
+  ],
+  "RI5": [
+    "RU",
+    "European Russia"
+  ],
+  "RI6": [
+    "RU",
+    "European Russia"
+  ],
+  "RI7": [
+    "RU",
+    "European Russia"
+  ],
+  "RJ1": [
+    "RU",
+    "European Russia"
+  ],
+  "RJ2": [
+    "RU",
+    "European Russia"
+  ],
+  "RJ3": [
+    "RU",
+    "European Russia"
+  ],
+  "RJ4": [
+    "RU",
+    "European Russia"
+  ],
+  "RJ5": [
+    "RU",
+    "European Russia"
+  ],
+  "RJ6": [
+    "RU",
+    "European Russia"
+  ],
+  "RJ7": [
+    "RU",
+    "European Russia"
+  ],
+  "RK1": [
+    "RU",
+    "European Russia"
+  ],
+  "RK2": [
+    "RU",
+    "European Russia"
+  ],
+  "RK3": [
+    "RU",
+    "European Russia"
+  ],
+  "RK4": [
+    "RU",
+    "European Russia"
+  ],
+  "RK5": [
+    "RU",
+    "European Russia"
+  ],
+  "RK6": [
+    "RU",
+    "European Russia"
+  ],
+  "RK7": [
+    "RU",
+    "European Russia"
+  ],
+  "RL1": [
+    "RU",
+    "European Russia"
+  ],
+  "RL2": [
+    "RU",
+    "European Russia"
+  ],
+  "RL3": [
+    "RU",
+    "European Russia"
+  ],
+  "RL4": [
+    "RU",
+    "European Russia"
+  ],
+  "RL5": [
+    "RU",
+    "European Russia"
+  ],
+  "RL6": [
+    "RU",
+    "European Russia"
+  ],
+  "RL7": [
+    "RU",
+    "European Russia"
+  ],
+  "RM1": [
+    "RU",
+    "European Russia"
+  ],
+  "RM2": [
+    "RU",
+    "European Russia"
+  ],
+  "RM3": [
+    "RU",
+    "European Russia"
+  ],
+  "RM4": [
+    "RU",
+    "European Russia"
+  ],
+  "RM5": [
+    "RU",
+    "European Russia"
+  ],
+  "RM6": [
+    "RU",
+    "European Russia"
+  ],
+  "RM7": [
+    "RU",
+    "European Russia"
+  ],
+  "RN1": [
+    "RU",
+    "European Russia"
+  ],
+  "RN2": [
+    "RU",
+    "European Russia"
+  ],
+  "RN3": [
+    "RU",
+    "European Russia"
+  ],
+  "RN4": [
+    "RU",
+    "European Russia"
+  ],
+  "RN5": [
+    "RU",
+    "European Russia"
+  ],
+  "RN6": [
+    "RU",
+    "European Russia"
+  ],
+  "RN7": [
+    "RU",
+    "European Russia"
+  ],
+  "RO1": [
+    "RU",
+    "European Russia"
+  ],
+  "RO2": [
+    "RU",
+    "European Russia"
+  ],
+  "RO3": [
+    "RU",
+    "European Russia"
+  ],
+  "RO4": [
+    "RU",
+    "European Russia"
+  ],
+  "RO5": [
+    "RU",
+    "European Russia"
+  ],
+  "RO6": [
+    "RU",
+    "European Russia"
+  ],
+  "RO7": [
+    "RU",
+    "European Russia"
+  ],
+  "RP1": [
+    "RU",
+    "European Russia"
+  ],
+  "RP2": [
+    "RU",
+    "European Russia"
+  ],
+  "RP3": [
+    "RU",
+    "European Russia"
+  ],
+  "RP4": [
+    "RU",
+    "European Russia"
+  ],
+  "RP5": [
+    "RU",
+    "European Russia"
+  ],
+  "RP6": [
+    "RU",
+    "European Russia"
+  ],
+  "RP7": [
+    "RU",
+    "European Russia"
+  ],
+  "RQ1": [
+    "RU",
+    "European Russia"
+  ],
+  "RQ2": [
+    "RU",
+    "European Russia"
+  ],
+  "RQ3": [
+    "RU",
+    "European Russia"
+  ],
+  "RQ4": [
+    "RU",
+    "European Russia"
+  ],
+  "RQ5": [
+    "RU",
+    "European Russia"
+  ],
+  "RQ6": [
+    "RU",
+    "European Russia"
+  ],
+  "RQ7": [
+    "RU",
+    "European Russia"
+  ],
+  "RR1": [
+    "RU",
+    "European Russia"
+  ],
+  "RR2": [
+    "RU",
+    "European Russia"
+  ],
+  "RR3": [
+    "RU",
+    "European Russia"
+  ],
+  "RR4": [
+    "RU",
+    "European Russia"
+  ],
+  "RR5": [
+    "RU",
+    "European Russia"
+  ],
+  "RR6": [
+    "RU",
+    "European Russia"
+  ],
+  "RR7": [
+    "RU",
+    "European Russia"
+  ],
+  "RS1": [
+    "RU",
+    "European Russia"
+  ],
+  "RS2": [
+    "RU",
+    "European Russia"
+  ],
+  "RS3": [
+    "RU",
+    "European Russia"
+  ],
+  "RS4": [
+    "RU",
+    "European Russia"
+  ],
+  "RS5": [
+    "RU",
+    "European Russia"
+  ],
+  "RS6": [
+    "RU",
+    "European Russia"
+  ],
+  "RS7": [
+    "RU",
+    "European Russia"
+  ],
+  "RT1": [
+    "RU",
+    "European Russia"
+  ],
+  "RT2": [
+    "RU",
+    "European Russia"
+  ],
+  "RT3": [
+    "RU",
+    "European Russia"
+  ],
+  "RT4": [
+    "RU",
+    "European Russia"
+  ],
+  "RT5": [
+    "RU",
+    "European Russia"
+  ],
+  "RT6": [
+    "RU",
+    "European Russia"
+  ],
+  "RT7": [
+    "RU",
+    "European Russia"
+  ],
+  "RU1": [
+    "RU",
+    "European Russia"
+  ],
+  "RU2": [
+    "RU",
+    "European Russia"
+  ],
+  "RU3": [
+    "RU",
+    "European Russia"
+  ],
+  "RU4": [
+    "RU",
+    "European Russia"
+  ],
+  "RU5": [
+    "RU",
+    "European Russia"
+  ],
+  "RU6": [
+    "RU",
+    "European Russia"
+  ],
+  "RU7": [
+    "RU",
+    "European Russia"
+  ],
+  "RV1": [
+    "RU",
+    "European Russia"
+  ],
+  "RV2": [
+    "RU",
+    "European Russia"
+  ],
+  "RV3": [
+    "RU",
+    "European Russia"
+  ],
+  "RV4": [
+    "RU",
+    "European Russia"
+  ],
+  "RV5": [
+    "RU",
+    "European Russia"
+  ],
+  "RV6": [
+    "RU",
+    "European Russia"
+  ],
+  "RV7": [
+    "RU",
+    "European Russia"
+  ],
+  "RW1": [
+    "RU",
+    "European Russia"
+  ],
+  "RW2": [
+    "RU",
+    "European Russia"
+  ],
+  "RW3": [
+    "RU",
+    "European Russia"
+  ],
+  "RW4": [
+    "RU",
+    "European Russia"
+  ],
+  "RW5": [
+    "RU",
+    "European Russia"
+  ],
+  "RW6": [
+    "RU",
+    "European Russia"
+  ],
+  "RW7": [
+    "RU",
+    "European Russia"
+  ],
+  "RX1": [
+    "RU",
+    "European Russia"
+  ],
+  "RX2": [
+    "RU",
+    "European Russia"
+  ],
+  "RX3": [
+    "RU",
+    "European Russia"
+  ],
+  "RX4": [
+    "RU",
+    "European Russia"
+  ],
+  "RX5": [
+    "RU",
+    "European Russia"
+  ],
+  "RX6": [
+    "RU",
+    "European Russia"
+  ],
+  "RX7": [
+    "RU",
+    "European Russia"
+  ],
+  "RY1": [
+    "RU",
+    "European Russia"
+  ],
+  "RY2": [
+    "RU",
+    "European Russia"
+  ],
+  "RY3": [
+    "RU",
+    "European Russia"
+  ],
+  "RY4": [
+    "RU",
+    "European Russia"
+  ],
+  "RY5": [
+    "RU",
+    "European Russia"
+  ],
+  "RY6": [
+    "RU",
+    "European Russia"
+  ],
+  "RY7": [
+    "RU",
+    "European Russia"
+  ],
+  "RZ1": [
+    "RU",
+    "European Russia"
+  ],
+  "RZ2": [
+    "RU",
+    "European Russia"
+  ],
+  "RZ3": [
+    "RU",
+    "European Russia"
+  ],
+  "RZ4": [
+    "RU",
+    "European Russia"
+  ],
+  "RZ5": [
+    "RU",
+    "European Russia"
+  ],
+  "RZ6": [
+    "RU",
+    "European Russia"
+  ],
+  "RZ7": [
+    "RU",
+    "European Russia"
+  ],
+  "R1": [
+    "RU",
+    "Franz Josef Land"
+  ],
+  "R2": [
+    "RU",
+    "European Russia"
+  ],
+  "R3": [
+    "RU",
+    "European Russia"
+  ],
+  "R4": [
+    "RU",
+    "European Russia"
+  ],
+  "R5": [
+    "RU",
+    "European Russia"
+  ],
+  "R6": [
+    "RU",
+    "European Russia"
+  ],
+  "R7": [
+    "RU",
+    "European Russia"
+  ],
+  "VP8": [
+    "FK",
+    "Falkland Islands (Malvinas)"
+  ],
+  "OY": [
+    "FO",
+    "Faroe Islands"
+  ],
+  "3D2": [
+    "FJ",
+    "Fiji"
+  ],
+  "OF": [
+    "FI",
+    "Finland"
+  ],
+  "OG": [
+    "FI",
+    "Finland"
+  ],
+  "OH": [
+    "FI",
+    "Finland"
+  ],
+  "OI": [
+    "FI",
+    "Finland"
+  ],
+  "F0": [
+    "FR",
+    "France"
+  ],
+  "F1": [
+    "FR",
+    "France"
+  ],
+  "F2": [
+    "FR",
+    "France"
+  ],
+  "F3": [
+    "FR",
+    "France"
+  ],
+  "F4": [
+    "FR",
+    "France"
+  ],
+  "F5": [
+    "FR",
+    "France"
+  ],
+  "F6": [
+    "FR",
+    "France"
+  ],
+  "F7": [
+    "FR",
+    "France"
+  ],
+  "F8": [
+    "FR",
+    "France"
+  ],
+  "F9": [
+    "FR",
+    "France"
+  ],
+  "FY": [
+    "GF",
+    "French Guiana"
+  ],
+  "FT": [
+    "FR",
+    "French Southern and Antarctic Lands"
+  ],
+  "FO": [
+    "YT",
+    "Mayotte"
+  ],
+  "TX": [
+    "PF",
+    "French Polynesia"
+  ],
+  "TR": [
+    "GA",
+    "Gabon"
+  ],
+  "HC8": [
+    "EC",
+    "Galapagos Islands"
+  ],
+  "HD8": [
+    "EC",
+    "Galapagos Islands"
+  ],
+  "C5": [
+    "GM",
+    "Gambia"
+  ],
+  "4L": [
+    "GE",
+    "Georgia"
+  ],
+  "DA": [
+    "DE",
+    "Germany"
+  ],
+  "DB": [
+    "DE",
+    "Germany"
+  ],
+  "DC": [
+    "DE",
+    "Germany"
+  ],
+  "DD": [
+    "DE",
+    "Germany"
+  ],
+  "DE": [
+    "DE",
+    "Germany"
+  ],
+  "DF": [
+    "DE",
+    "Germany"
+  ],
+  "DG": [
+    "DE",
+    "Germany"
+  ],
+  "DH": [
+    "DE",
+    "Germany"
+  ],
+  "DI": [
+    "DE",
+    "Germany"
+  ],
+  "DJ": [
+    "DE",
+    "Germany"
+  ],
+  "DK": [
+    "DE",
+    "Germany"
+  ],
+  "DL": [
+    "DE",
+    "Germany"
+  ],
+  "DM": [
+    "DE",
+    "Germany"
+  ],
+  "DN": [
+    "DE",
+    "Germany"
+  ],
+  "DO": [
+    "DE",
+    "Germany"
+  ],
+  "DP": [
+    "DE",
+    "Germany"
+  ],
+  "DQ": [
+    "DE",
+    "Germany"
+  ],
+  "DR": [
+    "DE",
+    "Germany"
+  ],
+  "9G": [
+    "GH",
+    "Ghana"
+  ],
+  "ZB2": [
+    "GI",
+    "Gibraltar"
+  ],
+  "SV": [
+    "GR",
+    "Greece"
+  ],
+  "SW": [
+    "GR",
+    "Greece"
+  ],
+  "SX": [
+    "GR",
+    "Greece"
+  ],
+  "SY": [
+    "GR",
+    "Greece"
+  ],
+  "SZ": [
+    "GR",
+    "Greece"
+  ],
+  "J4": [
+    "GR",
+    "Greece"
+  ],
+  "OX": [
+    "GL",
+    "Greenland"
+  ],
+  "J3": [
+    "GD",
+    "Grenada"
+  ],
+  "FG": [
+    "GP",
+    "Guadeloupe"
+  ],
+  "KH2": [
+    "GU",
+    "Guam"
+  ],
+  "KG4": [
+    "US",
+    "Guantanamo Bay"
+  ],
+  "TG": [
+    "GT",
+    "Guatemala"
+  ],
+  "TD": [
+    "GT",
+    "Guatemala"
+  ],
+  "2U": [
+    "GG",
+    "Guernsey"
+  ],
+  "MU": [
+    "GG",
+    "Guernsey"
+  ],
+  "MP": [
+    "GG",
+    "Guernsey"
+  ],
+  "GU": [
+    "GG",
+    "Guernsey"
+  ],
+  "GP": [
+    "GG",
+    "Guernsey"
+  ],
+  "3X": [
+    "GN",
+    "Guinea"
+  ],
+  "J5": [
+    "GW",
+    "Guinea-Bissau"
+  ],
+  "8R": [
+    "GY",
+    "Guyana"
+  ],
+  "HH": [
+    "HT",
+    "Haiti"
+  ],
+  "KH6": [
+    "US",
+    "Hawaii"
+  ],
+  "KH7": [
+    "US",
+    "Hawaii"
+  ],
+  "VK0": [
+    "HM",
+    "Heard Island and McDonald Islands"
+  ],
+  "HV": [
+    "VA",
+    "Holy See (Vatican City State)"
+  ],
+  "HQ": [
+    "HN",
+    "Honduras"
+  ],
+  "HR": [
+    "HN",
+    "Honduras"
+  ],
+  "VR": [
+    "HK",
+    "Hong Kong"
+  ],
+  "HA": [
+    "HU",
+    "Hungary"
+  ],
+  "HG": [
+    "HU",
+    "Hungary"
+  ],
+  "TF": [
+    "IS",
+    "Iceland"
+  ],
+  "VU": [
+    "IN",
+    "India"
+  ],
+  "YB": [
+    "ID",
+    "Indonesia"
+  ],
+  "YC": [
+    "ID",
+    "Indonesia"
+  ],
+  "YD": [
+    "ID",
+    "Indonesia"
+  ],
+  "YE": [
+    "ID",
+    "Indonesia"
+  ],
+  "YF": [
+    "ID",
+    "Indonesia"
+  ],
+  "YG": [
+    "ID",
+    "Indonesia"
+  ],
+  "YH": [
+    "ID",
+    "Indonesia"
+  ],
+  "EP": [
+    "IR",
+    "Iran Islamic Republic of"
+  ],
+  "EQ": [
+    "IR",
+    "Iran Islamic Republic of"
+  ],
+  "YI": [
+    "IQ",
+    "Iraq"
+  ],
+  "EI": [
+    "IE",
+    "Ireland"
+  ],
+  "EJ": [
+    "IE",
+    "Ireland"
+  ],
+  "2D": [
+    "IM",
+    "Isle of Man"
+  ],
+  "MD": [
+    "IM",
+    "Isle of Man"
+  ],
+  "MT": [
+    "IM",
+    "Isle of Man"
+  ],
+  "GD": [
+    "IM",
+    "Isle of Man"
+  ],
+  "GT": [
+    "IM",
+    "Isle of Man"
+  ],
+  "4X": [
+    "IL",
+    "Israel"
+  ],
+  "4Z": [
+    "IL",
+    "Israel"
+  ],
+  "I0": [
+    "IT",
+    "Italy"
+  ],
+  "I1": [
+    "IT",
+    "Italy"
+  ],
+  "I2": [
+    "IT",
+    "Italy"
+  ],
+  "I3": [
+    "IT",
+    "Italy"
+  ],
+  "I4": [
+    "IT",
+    "Italy"
+  ],
+  "I5": [
+    "IT",
+    "Italy"
+  ],
+  "I6": [
+    "IT",
+    "Italy"
+  ],
+  "I7": [
+    "IT",
+    "Italy"
+  ],
+  "I8": [
+    "IT",
+    "Italy"
+  ],
+  "I9": [
+    "IT",
+    "Italy"
+  ],
+  "IK": [
+    "IT",
+    "Italy"
+  ],
+  "IN": [
+    "IT",
+    "Italy"
+  ],
+  "IQ": [
+    "IT",
+    "Italy"
+  ],
+  "IR": [
+    "IT",
+    "Italy"
+  ],
+  "IS": [
+    "IT",
+    "Italy"
+  ],
+  "IT": [
+    "IT",
+    "Italy"
+  ],
+  "IU": [
+    "IT",
+    "Italy"
+  ],
+  "IV": [
+    "IT",
+    "Italy"
+  ],
+  "IW": [
+    "IT",
+    "Italy"
+  ],
+  "IZ": [
+    "IT",
+    "Italy"
+  ],
+  "6Y": [
+    "JM",
+    "Jamaica"
+  ],
+  "JX": [
+    "NO",
+    "Jan Mayen"
+  ],
+  "JA": [
+    "JP",
+    "Japan"
+  ],
+  "JB": [
+    "JP",
+    "Japan"
+  ],
+  "JC": [
+    "JP",
+    "Japan"
+  ],
+  "JD": [
+    "JP",
+    "Japan"
+  ],
+  "JE": [
+    "JP",
+    "Japan"
+  ],
+  "JF": [
+    "JP",
+    "Japan"
+  ],
+  "JG": [
+    "JP",
+    "Japan"
+  ],
+  "JH": [
+    "JP",
+    "Japan"
+  ],
+  "JI": [
+    "JP",
+    "Japan"
+  ],
+  "JJ": [
+    "JP",
+    "Japan"
+  ],
+  "JK": [
+    "JP",
+    "Japan"
+  ],
+  "JL": [
+    "JP",
+    "Japan"
+  ],
+  "JM": [
+    "JP",
+    "Japan"
+  ],
+  "JN": [
+    "JP",
+    "Japan"
+  ],
+  "JO": [
+    "JP",
+    "Japan"
+  ],
+  "JP": [
+    "JP",
+    "Japan"
+  ],
+  "JQ": [
+    "JP",
+    "Japan"
+  ],
+  "JR": [
+    "JP",
+    "Japan"
+  ],
+  "JS": [
+    "JP",
+    "Japan"
+  ],
+  "7J": [
+    "JP",
+    "Japan"
+  ],
+  "7K": [
+    "JP",
+    "Japan"
+  ],
+  "7L": [
+    "JP",
+    "Japan"
+  ],
+  "7M": [
+    "JP",
+    "Japan"
+  ],
+  "7N": [
+    "JP",
+    "Japan"
+  ],
+  "8J": [
+    "JP",
+    "Japan"
+  ],
+  "8N": [
+    "JP",
+    "Japan"
+  ],
+  "2J": [
+    "JE",
+    "Jersey"
+  ],
+  "MJ": [
+    "JE",
+    "Jersey"
+  ],
+  "MH": [
+    "JE",
+    "Jersey"
+  ],
+  "GJ": [
+    "JE",
+    "Jersey"
+  ],
+  "GH": [
+    "JE",
+    "Jersey"
+  ],
+  "KH3": [
+    "US",
+    "Johnston Island"
+  ],
+  "JY": [
+    "JO",
+    "Jordan"
+  ],
+  "UA2": [
+    "RU",
+    "Kaliningrad"
+  ],
+  "RA2": [
+    "RU",
+    "Kaliningrad"
+  ],
+  "UN": [
+    "KZ",
+    "Kazakhstan"
+  ],
+  "UO": [
+    "KZ",
+    "Kazakhstan"
+  ],
+  "UP": [
+    "KZ",
+    "Kazakhstan"
+  ],
+  "UQ": [
+    "KZ",
+    "Kazakhstan"
+  ],
+  "5Y": [
+    "KE",
+    "Kenya"
+  ],
+  "5Z": [
+    "KE",
+    "Kenya"
+  ],
+  "ZL8": [
+    "NZ",
+    "Kermadec Islands"
+  ],
+  "P5": [
+    "KP",
+    "Korea Democratic People's Republic of"
+  ],
+  "HL": [
+    "KR",
+    "Korea Republic of"
+  ],
+  "6K": [
+    "KR",
+    "Korea Republic of"
+  ],
+  "6L": [
+    "KR",
+    "Korea Republic of"
+  ],
+  "6M": [
+    "KR",
+    "Korea Republic of"
+  ],
+  "6N": [
+    "KR",
+    "Korea Republic of"
+  ],
+  "DS": [
+    "KR",
+    "Korea Republic of"
+  ],
+  "KH7K": [
+    "US",
+    "Kure Island"
+  ],
+  "9K": [
+    "KW",
+    "Kuwait"
+  ],
+  "EX": [
+    "KG",
+    "Kyrgyzstan"
+  ],
+  "VU7": [
+    "IN",
+    "Lakshadweep Islands"
+  ],
+  "XW": [
+    "LA",
+    "Lao People's Democratic Republic"
+  ],
+  "YL": [
+    "LV",
+    "Latvia"
+  ],
+  "OD": [
+    "LB",
+    "Lebanon"
+  ],
+  "7P": [
+    "LS",
+    "Lesotho"
+  ],
+  "EL": [
+    "LR",
+    "Liberia"
+  ],
+  "5A": [
+    "LY",
+    "Libya"
+  ],
+  "HB0": [
+    "LI",
+    "Liechtenstein"
+  ],
+  "LY": [
+    "LT",
+    "Lithuania"
+  ],
+  "VK9L": [
+    "AU",
+    "Lord Howe Island"
+  ],
+  "LX": [
+    "LU",
+    "Luxembourg"
+  ],
+  "XX9": [
+    "MO",
+    "Macao"
+  ],
+  "Z3": [
+    "MK",
+    "Macedonia"
+  ],
+  "5R": [
+    "MG",
+    "Madagascar"
+  ],
+  "CT3": [
+    "PT",
+    "Portugal"
+  ],
+  "7Q": [
+    "MW",
+    "Malawi"
+  ],
+  "8Q": [
+    "MV",
+    "Maldives"
+  ],
+  "TZ": [
+    "ML",
+    "Mali"
+  ],
+  "9H": [
+    "MT",
+    "Malta"
+  ],
+  "KH0": [
+    "MP",
+    "Northern Mariana Islands"
+  ],
+  "OJ0": [
+    "",
+    "Market Reef"
+  ],
+  "V7": [
+    "MH",
+    "Marshall Islands"
+  ],
+  "FM": [
+    "MQ",
+    "Martinique"
+  ],
+  "5T": [
+    "MR",
+    "Mauritania"
+  ],
+  "3B8": [
+    "MU",
+    "Mauritius"
+  ],
+  "FH": [
+    "YT",
+    "Mayotte"
+  ],
+  "VK9M": [
+    "AU",
+    "Mellish Reef"
+  ],
+  "XA": [
+    "MX",
+    "Mexico"
+  ],
+  "XB": [
+    "MX",
+    "Mexico"
+  ],
+  "XC": [
+    "MX",
+    "Mexico"
+  ],
+  "XD": [
+    "MX",
+    "Mexico"
+  ],
+  "XE": [
+    "MX",
+    "Mexico"
+  ],
+  "XF": [
+    "MX",
+    "Mexico"
+  ],
+  "XG": [
+    "MX",
+    "Mexico"
+  ],
+  "XH": [
+    "MX",
+    "Mexico"
+  ],
+  "XI": [
+    "MX",
+    "Mexico"
+  ],
+  "V6": [
+    "FM",
+    "Micronesia Federated States of"
+  ],
+  "KH4": [
+    "US",
+    "Midway Island"
+  ],
+  "ER": [
+    "MD",
+    "Moldova Republic of"
+  ],
+  "3A": [
+    "MC",
+    "Monaco"
+  ],
+  "JT": [
+    "MN",
+    "Mongolia"
+  ],
+  "JU": [
+    "MN",
+    "Mongolia"
+  ],
+  "JV": [
+    "MN",
+    "Mongolia"
+  ],
+  "4O": [
+    "ME",
+    "Montenegro"
+  ],
+  "VP2M": [
+    "MS",
+    "Montserrat"
+  ],
+  "CN": [
+    "MA",
+    "Morocco"
+  ],
+  "C8": [
+    "MZ",
+    "Mozambique"
+  ],
+  "C9": [
+    "MZ",
+    "Mozambique"
+  ],
+  "XY": [
+    "MM",
+    "Myanmar"
+  ],
+  "XZ": [
+    "MM",
+    "Myanmar"
+  ],
+  "V5": [
+    "NA",
+    "Namibia"
+  ],
+  "C2": [
+    "NR",
+    "Nauru"
+  ],
+  "KP1": [
+    "",
+    "Navassa Island"
+  ],
+  "9N": [
+    "NP",
+    "Nepal"
+  ],
+  "PA": [
+    "NL",
+    "Netherlands"
+  ],
+  "PB": [
+    "NL",
+    "Netherlands"
+  ],
+  "PC": [
+    "NL",
+    "Netherlands"
+  ],
+  "PD": [
+    "NL",
+    "Netherlands"
+  ],
+  "PE": [
+    "NL",
+    "Netherlands"
+  ],
+  "PF": [
+    "NL",
+    "Netherlands"
+  ],
+  "PG": [
+    "NL",
+    "Netherlands"
+  ],
+  "PH": [
+    "NL",
+    "Netherlands"
+  ],
+  "PI": [
+    "NL",
+    "Netherlands"
+  ],
+  "FK": [
+    "NC",
+    "New Caledonia"
+  ],
+  "ZL": [
+    "NZ",
+    "New Zealand"
+  ],
+  "ZM": [
+    "NZ",
+    "New Zealand"
+  ],
+  "ZL9": [
+    "NZ",
+    "New Zealand Subantarctic Islands"
+  ],
+  "YN": [
+    "NI",
+    "Nicaragua"
+  ],
+  "H6": [
+    "NI",
+    "Nicaragua"
+  ],
+  "H7": [
+    "NI",
+    "Nicaragua"
+  ],
+  "HT": [
+    "NI",
+    "Nicaragua"
+  ],
+  "5U": [
+    "NE",
+    "Niger"
+  ],
+  "5N": [
+    "NG",
+    "Nigeria"
+  ],
+  "ZK2": [
+    "NU",
+    "Niue"
+  ],
+  "VK9N": [
+    "NF",
+    "Norfolk Island"
+  ],
+  "2I": [
+    "NIE",
+    "Northern Ireland"
+  ],
+  "MI": [
+    "NIE",
+    "Northern Ireland"
+  ],
+  "MN": [
+    "NIE",
+    "Northern Ireland"
+  ],
+  "GI": [
+    "NIE",
+    "Northern Ireland"
+  ],
+  "GN": [
+    "NIE",
+    "Northern Ireland"
+  ],
+  "LA": [
+    "NO",
+    "Norway"
+  ],
+  "LB": [
+    "NO",
+    "Norway"
+  ],
+  "LC": [
+    "NO",
+    "Norway"
+  ],
+  "LD": [
+    "NO",
+    "Norway"
+  ],
+  "LE": [
+    "NO",
+    "Norway"
+  ],
+  "LF": [
+    "NO",
+    "Norway"
+  ],
+  "LG": [
+    "NO",
+    "Norway"
+  ],
+  "LH": [
+    "NO",
+    "Norway"
+  ],
+  "LI": [
+    "NO",
+    "Norway"
+  ],
+  "LJ": [
+    "NO",
+    "Norway"
+  ],
+  "LK": [
+    "NO",
+    "Norway"
+  ],
+  "LL": [
+    "NO",
+    "Norway"
+  ],
+  "LM": [
+    "NO",
+    "Norway"
+  ],
+  "LN": [
+    "NO",
+    "Norway"
+  ],
+  "A4": [
+    "OM",
+    "Oman"
+  ],
+  "YP": [
+    "RO",
+    "Romania"
+  ],
+  "YQ": [
+    "RO",
+    "Romania"
+  ],
+  "YR": [
+    "RO",
+    "Romania"
+  ],
+  "AP": [
+    "PK",
+    "Pakistan"
+  ],
+  "T8": [
+    "PW",
+    "Palau"
+  ],
+  "E4": [
+    "PS",
+    "Palestine State of"
+  ],
+  "KH5": [
+    "UM",
+    "Palmyra & Jarvis Island"
+  ],
+  "HO": [
+    "PA",
+    "Panama"
+  ],
+  "HP": [
+    "PA",
+    "Panama"
+  ],
+  "P2": [
+    "PG",
+    "Papua New Guinea"
+  ],
+  "ZP": [
+    "PY",
+    "Paraguay"
+  ],
+  "OA": [
+    "PE",
+    "Peru"
+  ],
+  "OB": [
+    "PE",
+    "Peru"
+  ],
+  "OC": [
+    "PE",
+    "Peru"
+  ],
+  "DU": [
+    "PH",
+    "Philippines"
+  ],
+  "DV": [
+    "PH",
+    "Philippines"
+  ],
+  "DW": [
+    "PH",
+    "Philippines"
+  ],
+  "DX": [
+    "PH",
+    "Philippines"
+  ],
+  "DY": [
+    "PH",
+    "Philippines"
+  ],
+  "DZ": [
+    "PH",
+    "Philippines"
+  ],
+  "VP6": [
+    "PN",
+    "Pitcairn"
+  ],
+  "3Z6": [
+    "PL",
+    "Poland"
+  ],
+  "SN": [
+    "PL",
+    "Poland"
+  ],
+  "SO": [
+    "PL",
+    "Poland"
+  ],
+  "SP": [
+    "PL",
+    "Poland"
+  ],
+  "SQ": [
+    "PL",
+    "Poland"
+  ],
+  "SR": [
+    "PL",
+    "Poland"
+  ],
+  "CQ0": [
+    "PT",
+    "Portugal"
+  ],
+  "CQ1": [
+    "PT",
+    "Portugal"
+  ],
+  "CQ2": [
+    "PT",
+    "Portugal"
+  ],
+  "CQ3": [
+    "PT",
+    "Portugal"
+  ],
+  "CQ7": [
+    "PT",
+    "Portugal"
+  ],
+  "CQ8": [
+    "PT",
+    "Portugal"
+  ],
+  "CR1": [
+    "PT",
+    "Portugal"
+  ],
+  "CR2": [
+    "PT",
+    "Portugal"
+  ],
+  "CR3": [
+    "PT",
+    "Portugal"
+  ],
+  "CR5": [
+    "PT",
+    "Portugal"
+  ],
+  "CR6": [
+    "PT",
+    "Portugal"
+  ],
+  "CR7": [
+    "PT",
+    "Portugal"
+  ],
+  "CR8": [
+    "PT",
+    "Portugal"
+  ],
+  "CR9": [
+    "PT",
+    "Portugal"
+  ],
+  "CS2": [
+    "PT",
+    "Portugal"
+  ],
+  "CS3": [
+    "PT",
+    "Portugal"
+  ],
+  "CS4": [
+    "PT",
+    "Portugal"
+  ],
+  "CS5": [
+    "PT",
+    "Portugal"
+  ],
+  "CS7": [
+    "PT",
+    "Portugal"
+  ],
+  "CS8": [
+    "PT",
+    "Portugal"
+  ],
+  "CT1": [
+    "PT",
+    "Portugal"
+  ],
+  "CT2": [
+    "PT",
+    "Portugal"
+  ],
+  "CT4": [
+    "PT",
+    "Portugal"
+  ],
+  "CT5": [
+    "PT",
+    "Portugal"
+  ],
+  "CT6": [
+    "PT",
+    "Portugal"
+  ],
+  "CT7": [
+    "PT",
+    "Portugal"
+  ],
+  "CT8": [
+    "PT",
+    "Portugal"
+  ],
+  "CT9": [
+    "PT",
+    "Portugal"
+  ],
+  "CU0": [
+    "PT",
+    "Portugal"
+  ],
+  "CU1": [
+    "PT",
+    "Portugal"
+  ],
+  "CU2": [
+    "PT",
+    "Portugal"
+  ],
+  "CU3": [
+    "PT",
+    "Portugal"
+  ],
+  "CU4": [
+    "PT",
+    "Portugal"
+  ],
+  "CU5": [
+    "PT",
+    "Portugal"
+  ],
+  "CU6": [
+    "PT",
+    "Portugal"
+  ],
+  "CU7": [
+    "PT",
+    "Portugal"
+  ],
+  "CU8": [
+    "PT",
+    "Portugal"
+  ],
+  "BV9P": [
+    "",
+    "Pratas Islands"
+  ],
+  "ZS8": [
+    "ZA",
+    "Prince Edward & Marion Islands"
+  ],
+  "KP3": [
+    "PR",
+    "Puerto Rico"
+  ],
+  "KP4": [
+    "PR",
+    "Puerto Rico"
+  ],
+  "A7": [
+    "QA",
+    "Qatar"
+  ],
+  "FR": [
+    "RE",
+    "Reunion"
+  ],
+  "XA4": [
+    "MX",
+    "Revillagigedo Islands"
+  ],
+  "XB4": [
+    "MX",
+    "Revillagigedo Islands"
+  ],
+  "XC4": [
+    "MX",
+    "Revillagigedo Islands"
+  ],
+  "XD4": [
+    "MX",
+    "Revillagigedo Islands"
+  ],
+  "XE4": [
+    "MX",
+    "Revillagigedo Islands"
+  ],
+  "XF4": [
+    "MX",
+    "Revillagigedo Islands"
+  ],
+  "XG4": [
+    "MX",
+    "Revillagigedo Islands"
+  ],
+  "XH4": [
+    "MX",
+    "Revillagigedo Islands"
+  ],
+  "XI4": [
+    "MX",
+    "Revillagigedo Islands"
+  ],
+  "3B9": [
+    "MU",
+    "Rodriguez Island"
+  ],
+  "YO": [
+    "RO",
+    "Romania"
+  ],
+  "9X": [
+    "RW",
+    "Rwanda"
+  ],
+  "CY0": [
+    "CA",
+    "Sable Island"
+  ],
+  "FJ": [
+    "BL",
+    "Saint Barthelemy"
+  ],
+  "ZD7": [
+    "SH",
+    "Saint Helena"
+  ],
+  "V4": [
+    "KN",
+    "Saint Kitts and Nevis"
+  ],
+  "J6": [
+    "LC",
+    "Saint Lucia"
+  ],
+  "FS": [
+    "MF",
+    "Saint Martin (French part)"
+  ],
+  "FP": [
+    "PM",
+    "Saint Pierre and Miquelon"
+  ],
+  "J8": [
+    "VC",
+    "Saint Vincent and the Grenadines"
+  ],
+  "5W": [
+    "WS",
+    "Samoa"
+  ],
+  "T7": [
+    "SM",
+    "San Marino"
+  ],
+  "S9": [
+    "ST",
+    "Sao Tome and Principe"
+  ],
+  "IS0": [
+    "IT",
+    "Sardinia"
+  ],
+  "IM0": [
+    "IT",
+    "Sardinia"
+  ],
+  "HZ": [
+    "SA",
+    "Saudi Arabia"
+  ],
+  "BS7": [
+    "",
+    "Scarborough Reef"
+  ],
+  "2M": [
+    "SH",
+    "Scotland"
+  ],
+  "MM": [
+    "SH",
+    "Scotland"
+  ],
+  "MS": [
+    "SH",
+    "Scotland"
+  ],
+  "GM": [
+    "SH",
+    "Scotland"
+  ],
+  "GS": [
+    "SH",
+    "Scotland"
+  ],
+  "6V": [
+    "SN",
+    "Senegal"
+  ],
+  "6W": [
+    "SN",
+    "Senegal"
+  ],
+  "YT": [
+    "RS",
+    "Serbia"
+  ],
+  "YU": [
+    "RS",
+    "Serbia"
+  ],
+  "S7": [
+    "SC",
+    "Seychelles"
+  ],
+  "9L": [
+    "SL",
+    "Sierra Leone"
+  ],
+  "9V": [
+    "SG",
+    "Singapore"
+  ],
+  "PJ5": [
+    "NL",
+    "Sint Eustatius and Saba"
+  ],
+  "PJ6": [
+    "NL",
+    "Sint Eustatius and Saba"
+  ],
+  "PJ7": [
+    "SX",
+    "Sint Maarten (Dutch part)"
+  ],
+  "OM": [
+    "SK",
+    "Slovakia"
+  ],
+  "S5": [
+    "SI",
+    "Slovenia"
+  ],
+  "H4": [
+    "SB",
+    "Solomon Islands"
+  ],
+  "T5": [
+    "SO",
+    "Somalia"
+  ],
+  "6O": [
+    "SO",
+    "Somalia"
+  ],
+  "ZR": [
+    "ZA",
+    "South Africa"
+  ],
+  "ZS": [
+    "ZA",
+    "South Africa"
+  ],
+  "ZT": [
+    "ZA",
+    "South Africa"
+  ],
+  "ZU": [
+    "ZA",
+    "South Africa"
+  ],
+  "VP8S": [
+    "GS",
+    "South Georgia and the South Sandwich Islands"
+  ],
+  "Z8": [
+    "SS",
+    "South Sudan"
+  ],
+  "EA": [
+    "ES",
+    "Spain"
+  ],
+  "EB": [
+    "ES",
+    "Spain"
+  ],
+  "EC": [
+    "ES",
+    "Spain"
+  ],
+  "ED": [
+    "ES",
+    "Spain"
+  ],
+  "EE": [
+    "ES",
+    "Spain"
+  ],
+  "EF": [
+    "ES",
+    "Spain"
+  ],
+  "EG": [
+    "ES",
+    "Spain"
+  ],
+  "EH": [
+    "ES",
+    "Spain"
+  ],
+  "4S": [
+    "LK",
+    "Sri Lanka"
+  ],
+  "CY9": [
+    "US",
+    "St. Paul Island"
+  ],
+  "ST": [
+    "SD",
+    "Sudan"
+  ],
+  "PZ": [
+    "SR",
+    "Suriname"
+  ],
+  "JW": [
+    "NO",
+    "Svalbard"
+  ],
+  "3DA": [
+    "SZ",
+    "Swaziland"
+  ],
+  "SA": [
+    "SE",
+    "Sweden"
+  ],
+  "SB": [
+    "SE",
+    "Sweden"
+  ],
+  "SC": [
+    "SE",
+    "Sweden"
+  ],
+  "SD": [
+    "SE",
+    "Sweden"
+  ],
+  "SE": [
+    "SE",
+    "Sweden"
+  ],
+  "SF": [
+    "SE",
+    "Sweden"
+  ],
+  "SG": [
+    "SE",
+    "Sweden"
+  ],
+  "SH": [
+    "SE",
+    "Sweden"
+  ],
+  "SI": [
+    "SE",
+    "Sweden"
+  ],
+  "SJ": [
+    "SE",
+    "Sweden"
+  ],
+  "SK": [
+    "SE",
+    "Sweden"
+  ],
+  "SL": [
+    "SE",
+    "Sweden"
+  ],
+  "SM": [
+    "SE",
+    "Sweden"
+  ],
+  "7S": [
+    "SE",
+    "Sweden"
+  ],
+  "8S": [
+    "SE",
+    "Sweden"
+  ],
+  "HB": [
+    "CH",
+    "Switzerland"
+  ],
+  "YK": [
+    "SY",
+    "Syrian Arab Republic"
+  ],
+  "BM": [
+    "TW",
+    "Taiwan Province of China"
+  ],
+  "BO": [
+    "TW",
+    "Taiwan Province of China"
+  ],
+  "BU": [
+    "TW",
+    "Taiwan Province of China"
+  ],
+  "BV": [
+    "TW",
+    "Taiwan Province of China"
+  ],
+  "BW": [
+    "TW",
+    "Taiwan Province of China"
+  ],
+  "BX": [
+    "TW",
+    "Taiwan Province of China"
+  ],
+  "EY": [
+    "TJ",
+    "Tajikistan"
+  ],
+  "5H": [
+    "TZ",
+    "Tanzania United Republic of"
+  ],
+  "5I": [
+    "TZ",
+    "Tanzania United Republic of"
+  ],
+  "H40": [
+    "SB",
+    "Temotu Province"
+  ],
+  "HS": [
+    "TH",
+    "Thailand"
+  ],
+  "E2": [
+    "TH",
+    "Thailand"
+  ],
+  "4W": [
+    "TL",
+    "Timor-Leste"
+  ],
+  "5V": [
+    "TG",
+    "Togo"
+  ],
+  "ZK3": [
+    "TK",
+    "Tokelau"
+  ],
+  "A3": [
+    "TO",
+    "Tonga"
+  ],
+  "9Y": [
+    "TT",
+    "Trinidad and Tobago"
+  ],
+  "9Z": [
+    "TT",
+    "Trinidad and Tobago"
+  ],
+  "ZD9": [
+    "SH",
+    "Tristan da Cunha & Gough Island"
+  ],
+  "3V": [
+    "TN",
+    "Tunisia"
+  ],
+  "TA": [
+    "TR",
+    "Turkey"
+  ],
+  "TB": [
+    "TR",
+    "Turkey"
+  ],
+  "TC": [
+    "TR",
+    "Turkey"
+  ],
+  "EZ": [
+    "TM",
+    "Turkmenistan"
+  ],
+  "VP5": [
+    "TC",
+    "Turks and Caicos Islands"
+  ],
+  "T2": [
+    "TV",
+    "Tuvalu"
+  ],
+  "5X": [
+    "UG",
+    "Uganda"
+  ],
+  "ZC4": [
+    "CY",
+    "UK Sov. Base Areas on Cyprus"
+  ],
+  "UR": [
+    "UA",
+    "Ukraine"
+  ],
+  "US": [
+    "UA",
+    "Ukraine"
+  ],
+  "UT": [
+    "UA",
+    "Ukraine"
+  ],
+  "UU": [
+    "UA",
+    "Ukraine"
+  ],
+  "UV": [
+    "UA",
+    "Ukraine"
+  ],
+  "UW": [
+    "UA",
+    "Ukraine"
+  ],
+  "UX": [
+    "UA",
+    "Ukraine"
+  ],
+  "UY": [
+    "UA",
+    "Ukraine"
+  ],
+  "UZ": [
+    "UA",
+    "Ukraine"
+  ],
+  "EM": [
+    "UA",
+    "Ukraine"
+  ],
+  "EN": [
+    "UA",
+    "Ukraine"
+  ],
+  "EO": [
+    "UA",
+    "Ukraine"
+  ],
+  "A6": [
+    "AE",
+    "United Arab Emirates"
+  ],
+  "AA": [
+    "US",
+    "United States"
+  ],
+  "AB": [
+    "US",
+    "United States"
+  ],
+  "AC": [
+    "US",
+    "United States"
+  ],
+  "AD": [
+    "US",
+    "United States"
+  ],
+  "AE": [
+    "US",
+    "United States"
+  ],
+  "AF": [
+    "US",
+    "United States"
+  ],
+  "AG": [
+    "US",
+    "United States"
+  ],
+  "AH": [
+    "US",
+    "United States"
+  ],
+  "AI": [
+    "US",
+    "United States"
+  ],
+  "AJ": [
+    "US",
+    "United States"
+  ],
+  "AK": [
+    "US",
+    "United States"
+  ],
+  "K0": [
+    "US",
+    "United States"
+  ],
+  "K1": [
+    "US",
+    "United States"
+  ],
+  "K2": [
+    "US",
+    "United States"
+  ],
+  "K3": [
+    "US",
+    "United States"
+  ],
+  "K4": [
+    "US",
+    "United States"
+  ],
+  "K5": [
+    "US",
+    "United States"
+  ],
+  "K6": [
+    "US",
+    "United States"
+  ],
+  "K7": [
+    "US",
+    "United States"
+  ],
+  "K8": [
+    "US",
+    "United States"
+  ],
+  "K9": [
+    "US",
+    "United States"
+  ],
+  "KA": [
+    "US",
+    "United States"
+  ],
+  "KB": [
+    "US",
+    "United States"
+  ],
+  "KC": [
+    "US",
+    "United States"
+  ],
+  "KD": [
+    "US",
+    "United States"
+  ],
+  "KE": [
+    "US",
+    "United States"
+  ],
+  "KF": [
+    "US",
+    "United States"
+  ],
+  "KG": [
+    "US",
+    "United States"
+  ],
+  "KH": [
+    "US",
+    "United States"
+  ],
+  "KI": [
+    "US",
+    "United States"
+  ],
+  "KJ": [
+    "US",
+    "United States"
+  ],
+  "KK": [
+    "US",
+    "United States"
+  ],
+  "KM": [
+    "US",
+    "United States"
+  ],
+  "KN": [
+    "US",
+    "United States"
+  ],
+  "KO": [
+    "US",
+    "United States"
+  ],
+  "KP": [
+    "US",
+    "United States"
+  ],
+  "KQ": [
+    "US",
+    "United States"
+  ],
+  "KR": [
+    "US",
+    "United States"
+  ],
+  "KS": [
+    "US",
+    "United States"
+  ],
+  "KT": [
+    "US",
+    "United States"
+  ],
+  "KU": [
+    "US",
+    "United States"
+  ],
+  "KV": [
+    "US",
+    "United States"
+  ],
+  "KW": [
+    "US",
+    "United States"
+  ],
+  "KX": [
+    "US",
+    "United States"
+  ],
+  "KY": [
+    "US",
+    "United States"
+  ],
+  "KZ": [
+    "US",
+    "United States"
+  ],
+  "N0": [
+    "US",
+    "United States"
+  ],
+  "N1": [
+    "US",
+    "United States"
+  ],
+  "N2": [
+    "US",
+    "United States"
+  ],
+  "N3": [
+    "US",
+    "United States"
+  ],
+  "N4": [
+    "US",
+    "United States"
+  ],
+  "N5": [
+    "US",
+    "United States"
+  ],
+  "N6": [
+    "US",
+    "United States"
+  ],
+  "N7": [
+    "US",
+    "United States"
+  ],
+  "N8": [
+    "US",
+    "United States"
+  ],
+  "N9": [
+    "US",
+    "United States"
+  ],
+  "NA": [
+    "US",
+    "United States"
+  ],
+  "NB": [
+    "US",
+    "United States"
+  ],
+  "NC": [
+    "US",
+    "United States"
+  ],
+  "ND": [
+    "US",
+    "United States"
+  ],
+  "NE": [
+    "US",
+    "United States"
+  ],
+  "NF": [
+    "US",
+    "United States"
+  ],
+  "NG": [
+    "US",
+    "United States"
+  ],
+  "NH": [
+    "US",
+    "United States"
+  ],
+  "NI": [
+    "US",
+    "United States"
+  ],
+  "NJ": [
+    "US",
+    "United States"
+  ],
+  "NK": [
+    "US",
+    "United States"
+  ],
+  "NM": [
+    "US",
+    "United States"
+  ],
+  "NN": [
+    "US",
+    "United States"
+  ],
+  "NO": [
+    "US",
+    "United States"
+  ],
+  "NP": [
+    "US",
+    "United States"
+  ],
+  "NQ": [
+    "US",
+    "United States"
+  ],
+  "NR": [
+    "US",
+    "United States"
+  ],
+  "NS": [
+    "US",
+    "United States"
+  ],
+  "NT": [
+    "US",
+    "United States"
+  ],
+  "NU": [
+    "US",
+    "United States"
+  ],
+  "NV": [
+    "US",
+    "United States"
+  ],
+  "NW": [
+    "US",
+    "United States"
+  ],
+  "NX": [
+    "US",
+    "United States"
+  ],
+  "NY": [
+    "US",
+    "United States"
+  ],
+  "NZ": [
+    "US",
+    "United States"
+  ],
+  "W0": [
+    "US",
+    "United States"
+  ],
+  "W1": [
+    "US",
+    "United States"
+  ],
+  "W2": [
+    "US",
+    "United States"
+  ],
+  "W3": [
+    "US",
+    "United States"
+  ],
+  "W4": [
+    "US",
+    "United States"
+  ],
+  "W5": [
+    "US",
+    "United States"
+  ],
+  "W6": [
+    "US",
+    "United States"
+  ],
+  "W7": [
+    "US",
+    "United States"
+  ],
+  "W8": [
+    "US",
+    "United States"
+  ],
+  "W9": [
+    "US",
+    "United States"
+  ],
+  "WA": [
+    "US",
+    "United States"
+  ],
+  "WB": [
+    "US",
+    "United States"
+  ],
+  "WC": [
+    "US",
+    "United States"
+  ],
+  "WD": [
+    "US",
+    "United States"
+  ],
+  "WE": [
+    "US",
+    "United States"
+  ],
+  "WF": [
+    "US",
+    "United States"
+  ],
+  "WG": [
+    "US",
+    "United States"
+  ],
+  "WH": [
+    "US",
+    "United States"
+  ],
+  "WI": [
+    "US",
+    "United States"
+  ],
+  "WJ": [
+    "US",
+    "United States"
+  ],
+  "WK": [
+    "US",
+    "United States"
+  ],
+  "WM": [
+    "US",
+    "United States"
+  ],
+  "WN": [
+    "US",
+    "United States"
+  ],
+  "WO": [
+    "US",
+    "United States"
+  ],
+  "WP": [
+    "US",
+    "United States"
+  ],
+  "WQ": [
+    "US",
+    "United States"
+  ],
+  "WR": [
+    "US",
+    "United States"
+  ],
+  "WS": [
+    "US",
+    "United States"
+  ],
+  "WT": [
+    "US",
+    "United States"
+  ],
+  "WU": [
+    "US",
+    "United States"
+  ],
+  "WV": [
+    "US",
+    "United States"
+  ],
+  "WW": [
+    "US",
+    "United States"
+  ],
+  "WX": [
+    "US",
+    "United States"
+  ],
+  "WY": [
+    "US",
+    "United States"
+  ],
+  "WZ": [
+    "US",
+    "United States"
+  ],
+  "CV": [
+    "UY",
+    "Uruguay"
+  ],
+  "CW": [
+    "UY",
+    "Uruguay"
+  ],
+  "CX": [
+    "UY",
+    "Uruguay"
+  ],
+  "UJ": [
+    "UZ",
+    "Uzbekistan"
+  ],
+  "UK": [
+    "UZ",
+    "Uzbekistan"
+  ],
+  "UL": [
+    "UZ",
+    "Uzbekistan"
+  ],
+  "UM": [
+    "UZ",
+    "Uzbekistan"
+  ],
+  "YJ": [
+    "VU",
+    "Vanuatu"
+  ],
+  "YV": [
+    "VE",
+    "Venezuela Bolivarian Republic of"
+  ],
+  "YW": [
+    "VE",
+    "Venezuela Bolivarian Republic of"
+  ],
+  "YX": [
+    "VE",
+    "Venezuela Bolivarian Republic of"
+  ],
+  "YY": [
+    "VE",
+    "Venezuela Bolivarian Republic of"
+  ],
+  "4M": [
+    "VE",
+    "Venezuela Bolivarian Republic of"
+  ],
+  "YV0": [
+    "VE",
+    "Aves Island"
+  ],
+  "3W": [
+    "VN",
+    "Viet Nam"
+  ],
+  "XV": [
+    "VN",
+    "Viet Nam"
+  ],
+  "KP2": [
+    "VI",
+    "Virgin Islands U.S."
+  ],
+  "KH9": [
+    "US",
+    "Wake Island"
+  ],
+  "2W": [
+    "WL",
+    "Wales"
+  ],
+  "MW": [
+    "WL",
+    "Wales"
+  ],
+  "MC": [
+    "WL",
+    "Wales"
+  ],
+  "GW": [
+    "WL",
+    "Wales"
+  ],
+  "GC": [
+    "WL",
+    "Wales"
+  ],
+  "FW": [
+    "WF",
+    "Wallis and Futuna"
+  ],
+  "9M2": [
+    "MY",
+    "West Malaysia"
+  ],
+  "9M4": [
+    "MY",
+    "West Malaysia"
+  ],
+  "9W2": [
+    "MY",
+    "West Malaysia"
+  ],
+  "9W4": [
+    "MY",
+    "West Malaysia"
+  ],
+  "T30": [
+    "KI",
+    "Western Kiribati (Gilbert Island)"
+  ],
+  "S0": [
+    "EH",
+    "Western Sahara"
+  ],
+  "VK9W": [
+    "AU",
+    "Willis Island"
+  ],
+  "7O": [
+    "YE",
+    "Yemen"
+  ],
+  "9I": [
+    "ZM",
+    "Zambia"
+  ],
+  "9J": [
+    "ZM",
+    "Zambia"
+  ],
+  "Z2": [
+    "ZW",
+    "Zimbabwe"
+  ],
+  "REF": [
+    "GATE",
+    "GATE"
+  ],
+  "XRF": [
+    "GATE",
+    "GATE"
+  ]
+}
