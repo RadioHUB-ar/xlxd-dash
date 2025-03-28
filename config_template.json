@@ -15,8 +15,8 @@
     "footer": "* All times are displayed in your local browser time<br>© 2025 RadioHUB — Licensed under the <a href=\"https://opensource.org/licenses/MIT\" target=\"_blank\" class=\"underline hover:text-blue-600\">MIT License</a> — <a href=\"https://github.com/RadioHUB-ar/xlxd-dash\" target=\"_blank\" class=\"underline hover:text-blue-600\">View on GitHub</a>"
   },
   "xlxd": {
-    "xml": "/var/log/xlxd.xml",
-    "pidfile": "/var/log/xlxd.pid",
+    "xml": "/var/log/xlxd/xlxd.xml",
+    "pidfile": "/run/xlxd.pid",
     "apiURL": "http://xlxapi.rlx.lu/api.php"
   }
 }
