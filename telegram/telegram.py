@@ -38,11 +38,10 @@ process = False
 timer = None
 
 def send_message(msg, dest):
-    print(msg)
     for CHAT_ID in dest:
       data = {"chat_id": CHAT_ID, "text": msg}
       res = requests.post(TG_URL, data=data)
-      print(res.text)
+    #   print(res.text)
 
 def call_flag(country):
     return ''.join(chr(0x1F1E6 + ord(letra) - ord('A')) for letra in country.upper())
@@ -132,7 +131,7 @@ def analizar_xml():
         ### NODES - Si NO es la primer corrida (process = True) y veo diferencias, guardo los json de nodes_now y nodes_old
         if process:
             if nodes_now.keys() != nodes_old.keys():
-                send_message("Diferencias en NODES", config["service"]["debug"])
+                send_message("Diferencias en NODES", logger)
 
             ### NODES - si hay nuevos (now - old)
             nuevos = nodes_now.keys() - nodes_old.keys()
