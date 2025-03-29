@@ -6,7 +6,7 @@ apt install -y python3-pip python3-venv
 
 venv
 
-pip install flask requests xmltodict
+pip install -r requirements.txt
 
 cat << "EOF" > /etc/systemd/system/xlxd-dash.service
 [Unit]
@@ -39,7 +39,7 @@ After=network.target
 [Service]
 WorkingDirectory=/srv/xlxd-dash
 Environment="FLASK_ENV=production"
-ExecStart=/srv/xlxd-dash/.venv/bin/python3 app.py
+ExecStart=/srv/xlxd-dash/.venv/bin/python3 telegram/telegram.py
 Restart=on-failure
 
 [Install]
