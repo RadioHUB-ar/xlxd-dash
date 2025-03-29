@@ -1,11 +1,14 @@
 # xlxd-dash
 
 ⚠️ **IN DEVELOPMENT** ⚠️
+
 Modern and lightweight dashboard for `xlxd`
 
 You're welcome to try it out
 
 If something breaks (or could be better), just open an issue!
+
+
 
 
 ## Install dashboard
@@ -52,6 +55,9 @@ systemctl status xlxd-dash
 ## Logs
 journalctl -f -u xlxd-dash
 ```
+
+
+
 
 ## Install telegram notification sender
 
