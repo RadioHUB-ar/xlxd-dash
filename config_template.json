@@ -1,18 +1,18 @@
 {
   "service": {
-    "name": "XLX128",
-    "dashURL": "https://xlx128.radiohub.ar",
+    "name": "XLX???",
+    "dashURL": "http://yourdash.example.org",
     "country": "Argentina",
-    "comment": "RadioHUB - [AMBE-Transcoded on Module A]",
+    "comment": "RadioHUB",
     "author": "RadioHUB",
     "description": "Live dashboard for XLX128 reflector. Track D-STAR / DMR / YSF / AMBE users, activity, and more. Powered by RadioHUB.",
     "keywords": "XLX128, DV, D-STAR, DSTAR, DMR, YSF, AMBE, reflector, dashboard, hamradio, RadioHUB",
     "links": [
-      {"name": "Blog", "url": "https://blog.RadioHUB.ar"},
-      {"name": "Telegram", "url": "https://t.me/RadioHUB_ar"},
-      {"name": "Feed", "url": "https://t.me/RadioHUB_Feed"}
+      {"name": "Name", "url": "https://link.example.org"},
+      {"name": "Name", "url": "https://link.example.org"},
+      {"name": "Name", "url": "https://link.example.org"}
     ],
-    "footer": "* All times are displayed in your local browser time<br>© 2025 RadioHUB — Licensed under the <a href=\"https://opensource.org/licenses/MIT\" target=\"_blank\" class=\"underline hover:text-blue-600\">MIT License</a> — <a href=\"https://github.com/RadioHUB-ar/xlxd-dash\" target=\"_blank\" class=\"underline hover:text-blue-600\">View on GitHub</a>"
+    "footer": "* All times are displayed in your local browser time<br>© 2025 RadioHUB — Licensed under the <a href=\"https://www.gnu.org/licenses/gpl-3.0.html\" target=\"_blank\" class=\"underline hover:text-blue-600\">GPLv3 License</a> — <a href=\"https://github.com/RadioHUB-ar/xlxd-dash\" target=\"_blank\" class=\"underline hover:text-blue-600\">View on GitHub</a>"
   },
   "xlxd": {
     "xml": "/var/log/xlxd/xlxd.xml",
