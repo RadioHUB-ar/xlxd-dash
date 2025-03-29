@@ -4,6 +4,9 @@
 
 Modern and lightweight dashboard for `xlxd`
 
+Check it out live: [https://xlx128.radiohub.ar/](https://xlx128.radiohub.ar/)
+
+
 You're welcome to try it out
 
 If something breaks (or could be better), just open an issue!
