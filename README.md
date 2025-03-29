@@ -9,8 +9,6 @@ You're welcome to try it out
 If something breaks (or could be better), just open an issue!
 
 
-
-
 ## Install dashboard
 ### As normal user
 ```
@@ -57,9 +55,35 @@ journalctl -f -u xlxd-dash
 ```
 
 
-
-
 ## Install telegram notification sender
+### Pay attention to config.json
+```
+cp config_tg_template.json config_tg.json
+vim config_tg.json
+```
+
+```
+"token": "Telegram Bot API Token",
+
+// Notify these chats when someone is transmitting over XLX
+"user_online": ["CHAT_ID", "@CHANNEL_NAME"],
+
+// Minimum interval (in minutes) between notifications for the same callsign (anti-flood)
+"user_gap": 60,
+
+// Notify these chats when a new node comes online
+"node_online": ["CHAT_ID", "@CHANNEL_NAME"],
+
+// Notify these chats when a node goes offline
+"node_offline": ["CHAT_ID", "@CHANNEL_NAME"],
+
+// Minimum time (in minutes) a node must stay offline before being considered online again
+"node_delay": 60,
+
+// Send logs or internal service info to these chats
+"logger": ["CHAT_ID", "@CHANNEL_NAME"]
+```
+
 
 ### As root
 ```

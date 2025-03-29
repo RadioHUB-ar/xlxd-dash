@@ -4,8 +4,8 @@
     "user_online": [],
     "user_gap": 60,
     "node_online": [],
-    "node_offline": 60,
-    "node_delay": [],
+    "node_offline": [],
+    "node_delay": 60,
     "logger": []
   },
   "xlxd": {
