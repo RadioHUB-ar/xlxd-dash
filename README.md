@@ -68,6 +68,9 @@ vim config_tg.json
 ```
 "token": "Telegram Bot API Token",
 
+// Only send notification for this modules
+"modules": "AB",
+
 // Notify these chats when someone is transmitting over XLX
 "user_online": ["CHAT_ID", "@CHANNEL_NAME"],
 

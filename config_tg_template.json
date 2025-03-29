@@ -1,6 +1,7 @@
 {
   "service": {
     "token": "",
+    "modules": "AB",
     "user_online": [],
     "user_gap": 60,
     "node_online": [],

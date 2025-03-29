@@ -14,6 +14,7 @@ ref_name = ""
 with open("./config_tg.json", "r", encoding="utf-8") as f:
     config = json.load(f)
 
+modules = config["service"]["modules"]
 user_online = config["service"]["user_online"]
 user_gap = config["service"]["user_gap"] * 60
 node_online = config["service"]["node_online"]
@@ -130,9 +131,6 @@ def analizar_xml():
 
         ### NODES - Si NO es la primer corrida (process = True) y veo diferencias, guardo los json de nodes_now y nodes_old
         if process:
-            if nodes_now.keys() != nodes_old.keys():
-                send_message("Diferencias en NODES", logger)
-
             ### NODES - si hay nuevos (now - old)
             nuevos = nodes_now.keys() - nodes_old.keys()
             if nuevos:
@@ -146,7 +144,12 @@ def analizar_xml():
                         del nodes_off[key]
                         send_message(f"Online {Call}-{Initial} On {ref_name} {LinkedModule} Protocol {Protocol}", logger)
                     else:
-                        send_message(f"✅{flag} {Call}-{Initial} On {ref_name} {LinkedModule} Protocol {Protocol}", logger + node_online)
+                        if (LinkedModule in modules):
+                            notifto = logger + node_offline
+                        else:
+                            notifto = logger
+
+                        send_message(f"✅{flag} {Call}-{Initial} On {ref_name} {LinkedModule} Protocol {Protocol}", notifto)
 
             ### NODES - si faltan nodes que antes estaban (old - now)
             eliminados = nodes_old.keys() - nodes_now.keys()
@@ -167,7 +170,12 @@ def analizar_xml():
                     LinkedModule = nodes_off[key]["LinkedModule"]
                     Protocol = nodes_off[key]["Protocol"]
                     flag = get_flag(Call)
-                    send_message(f"❌{flag} {Call}-{Initial} From {ref_name} {LinkedModule} Protocol {Protocol}", logger + node_offline)
+                    if (LinkedModule in modules):
+                        notifto = logger + node_offline
+                    else:
+                        notifto = logger
+                    send_message(f"❌{flag} {Call}-{Initial} From {ref_name} {LinkedModule} Protocol {Protocol}", notifto)
+    
                     del nodes_off[key]
 
         nodes_old = nodes_now
@@ -224,11 +232,16 @@ def analizar_xml():
                 On_module = stations_now[item]["On_module"]
                 flag = get_flag(stations_now[item]["Call"])
 
+                if (On_module in modules):
+                    notifto = logger + user_online
+                else:
+                    notifto = logger
+
                 if item not in stations_old.keys():
-                    send_message(f"🗣{flag} {Call} Via {Via_node} On {ref_name} {On_module}", logger + user_online)
+                    send_message(f"🗣{flag} {Call} Via {Via_node} On {ref_name} {On_module}", notifto)
                 else:
                     if stations_old[item]["LastHeardTime_epoch"] + user_gap < stations_now[item]["LastHeardTime_epoch"]:
-                        send_message(f"🗣{flag} {Call} Via {Via_node} On {ref_name} {On_module}", logger + user_online)
+                        send_message(f"🗣{flag} {Call} Via {Via_node} On {ref_name} {On_module}", notifto)
 
         stations_old = stations_now
 
