@@ -160,11 +160,6 @@ def analizar_xml():
                     nodes_off[key] = nodes_old[key]
                     nodes_off[key]["last_off"] = now_epoch
 
-            ### NODES - si tengo nodes offline, guardo dump
-            if len(nodes_off) > 0:
-                with open(f"logs/{now}_nodes_off.json", "w", encoding="utf-8") as f:
-                    json.dump(nodes_off, f, indent=4, ensure_ascii=False)
-
             for key in list(nodes_off.keys()):
                 if nodes_off[key]["last_off"] + node_delay < now_epoch:
                     Call = nodes_off[key]["Call"]
