@@ -2,6 +2,7 @@ const users_table = document.getElementById("users_table");
 const nodes_table = document.getElementById("nodes_table");
 const toggleDark = document.getElementById("toggle-dark");
 const toggleRefresh = document.getElementById("toggle-refresh");
+const toggleUserDetail = document.getElementById("toggle-user_detail");
 const uptimeEl = document.getElementById("server_uptime");
 
 function actualizarUptime() {
@@ -11,7 +12,9 @@ function actualizarUptime() {
 uptimeEl.textContent = secondsToDhms(uptime);
 setInterval(actualizarUptime, 1000);
 
-function cargarUsuarios() {
+function loadData() {
+  const uniq = []
+  rowClassName = ""
   fetch("/get_data")
     .then(res => res.json())
     .then(data => {
@@ -27,7 +30,20 @@ function cargarUsuarios() {
           exec = false;
         }
 
+        uniqnes = `${item.Call}${item.Suffix}`;
+        if ( uniq.includes(uniqnes) ) {
+          if (user_data_detail) {
+            rowClassName = "user_row";
+          } else {
+            rowClassName = "user_row hidden";
+          }
+        } else {
+          rowClassName = "";
+          uniq.push(uniqnes);
+        }
+
         const row = document.createElement("tr");
+        row.className = rowClassName;
 
         const order = document.createElement("td");
         order.className = "border border-gray-300 dark:border-gray-700 px-2 py-1 text-xs sm:text-sm hidden md:table-cell";
@@ -52,7 +68,7 @@ function cargarUsuarios() {
 
         const dprs = document.createElement("td");
         dprs.className = "border border-gray-300 dark:border-gray-700 px-2 py-1 text-xs sm:text-sm text-center";
-        dprs.innerHTML = `<a href="https://aprs.fi/#!call=${item.Call.trim()}*" target="_blank">🛰️</a>`;
+        dprs.innerHTML = `<a href="https://aprs.fi/#!call=${item.Call}*" target="_blank">🛰️</a>`;
         row.appendChild(dprs);
 
         const via = document.createElement("td");
@@ -128,32 +144,51 @@ function cargarUsuarios() {
     });
 }
 
-
-function actualizarIconoDarkMode() {
+// toggle dark mode
+function updateDarkMode() {
   const isDark = document.documentElement.classList.contains("dark");
   toggleDark.textContent = isDark ? "🌙" : "🔆";
 }
 
 toggleDark.addEventListener("click", () => {
   document.documentElement.classList.toggle("dark");
-  actualizarIconoDarkMode();
+  updateDarkMode();
 });
 
+// toggle auto refresh
 let autoRefresh = false;
 let intervalId = null;
-// Toggle auto refresh
 toggleRefresh.addEventListener("click", () => {
   autoRefresh = !autoRefresh;
 
   if (autoRefresh) {
     toggleRefresh.textContent = "🔁";
-    cargarUsuarios();
-    intervalId = setInterval(cargarUsuarios, 5000);
+    loadData();
+    intervalId = setInterval(loadData, 5000);
   } else {
     toggleRefresh.textContent = "⏸️";
     clearInterval(intervalId);
   }
 });
+
+// toogle hide user activity detail
+let user_data_detail = false;
+toggleUserDetail.addEventListener("click", () => {
+  user_data_detail = !user_data_detail;
+
+  if (user_data_detail) {
+    toggleUserDetail.textContent = "👁️";
+    document.querySelectorAll('.user_row').forEach(el => {
+      el.classList.remove('hidden');
+    });
+  } else {
+    toggleUserDetail.textContent = "🙈";
+    document.querySelectorAll('.user_row').forEach(el => {
+      el.classList.add('hidden');
+    });
+  }
+});
+
 
 // function capitalize(s)
 // {
@@ -181,5 +216,5 @@ function epoch2dateTime(epoch) {
   return date.getDate().toString().padStart(2,'0') + '/' + (date.getMonth()+1).toString().padStart(2,'0') + '/' + (date.getYear()-100) + ' ' + date.getHours().toString().padStart(2,'0') +':'+date.getMinutes().toString().padStart(2,'0')
 }
 
-actualizarIconoDarkMode();
-cargarUsuarios();
+updateDarkMode();
+loadData();

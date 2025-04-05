@@ -5,6 +5,11 @@
     "country": "Argentina",
     "comment": "RadioHUB",
     "author": "RadioHUB",
+    "modules": {
+      "A": "Main [AMBE-Transcoded]",
+      "B": "Net Only",
+      "C": "Testing"
+    },
     "description": "Live dashboard for XLX128 reflector. Track D-STAR / DMR / YSF / AMBE users, activity, and more. Powered by RadioHUB.",
     "keywords": "XLX128, DV, D-STAR, DSTAR, DMR, YSF, AMBE, reflector, dashboard, hamradio, RadioHUB",
     "links": [

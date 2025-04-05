@@ -43,25 +43,49 @@
         <img src="/static/img/logo.png" alt="Logo" class="h-10 w-auto">
         <h1 class="text-2xl sm:text-3xl font-bold">{{name}}</h1>
       </div>
-      <div class="flex gap-2">
-        <button id="toggle-refresh" class="px-2 py-1 text-xs sm:text-sm border rounded">⏸️</button>
-        <button id="toggle-dark" class="px-2 py-1 text-xs sm:text-sm border rounded">🌙</button>
-      </div>
     </div>
-
-    {% if links %}
-    <nav class="bg-gray-100 dark:bg-gray-800 px-4 py-2 shadow-md sticky top-0 z-50">
-      <div class="max-w-6xl mx-auto flex gap-4 text-sm">
+    <nav class="bg-gray-100 dark:bg-gray-800 px-4 py-2 flex justify-between items-center mb-4 sticky top-0 z-50">
+      {% if links %}
+      <div class="flex items-center gap-4">
         {% for link in links %}
         <a href="{{ link.url }}" target="_blank" class="hover:underline">
           {{ link.name }}
         </a>
         {% endfor %}
       </div>
+      {% endif %}
+        <div class="flex gap-2">
+        <button id="toggle-user_detail" class="px-2 py-1 text-xs sm:text-sm border rounded">🙈</button>
+        <button id="toggle-refresh" class="px-2 py-1 text-xs sm:text-sm border rounded">⏸️</button>
+        <button id="toggle-dark" class="px-2 py-1 text-xs sm:text-sm border rounded">🌙</button>
+      </div>
     </nav>
-    {% endif %}
 
     <div class="max-w-5xl mx-auto space-y-6">
+
+      {% if modules %}
+      <div id="modules_div" class="overflow-x-auto">
+        <table class="w-full table-auto border border-gray-300 dark:border-gray-700 text-sm">
+          <thead>
+            <tr>
+              <th colspan="2" class="text-left px-4 py-2 bg-gray-100 dark:bg-gray-800">
+                Modules
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for module, desc in modules.items() %}
+            <tr class="border-t border-gray-300 dark:border-gray-700">
+              <td class="bg-gray-100 dark:bg-gray-800 px-4 py-2">{{module}}</td>
+              <td class="bg-white dark:bg-gray-900 font-medium px-4 py-2 whitespace-nowrap">{{desc}}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% endif %}
+
+
       <div id="users_div" class="hidden overflow-x-auto">
         <table class="table-auto w-full table-auto w-full border border-gray-200 dark:border-gray-700">
           <thead class="bg-gray-100 dark:bg-gray-800">

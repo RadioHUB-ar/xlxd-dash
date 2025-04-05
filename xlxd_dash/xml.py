@@ -50,8 +50,8 @@ def get_flag(distintiva):
 def json_load():
     xml = xml_load()
     data = xmltodict.parse(xml["data"], force_list=("STATION", "NODE"))
-    heard_users = {}
-    linked_nodes = {}
+    heard_users = []
+    linked_nodes = []
 
     num = 1
     key = f"{xml['name']}_heard_users"
@@ -67,7 +67,7 @@ def json_load():
             fecha_obj = datetime.strptime(fecha_str, "%A %a %b %d %H:%M:%S %Y")
             temp["LastHeardTime"] = int(fecha_obj.timestamp())
 
-            heard_users[num] = temp
+            heard_users.append(temp)
             num += 1
 
     num = 1
@@ -86,8 +86,10 @@ def json_load():
             fecha_obj = datetime.strptime(fecha_str, "%A %a %b %d %H:%M:%S %Y")
             temp["LastHeardTime"] = int(fecha_obj.timestamp())
 
-            linked_nodes[num] = temp
+            linked_nodes.append(temp)
             num += 1
 
+    # print(heard_users)
+
     data["NAME"] = xml["name"]
-    return { "heard_users": heard_users,  "linked_nodes": linked_nodes}
+    return { "heard_users": sorted(heard_users, key=lambda x: x["LastHeardTime"], reverse=True),  "linked_nodes": sorted(linked_nodes, key=lambda x: x["LastHeardTime"], reverse=True)}
