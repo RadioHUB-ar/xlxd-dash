@@ -30,7 +30,8 @@ function loadData() {
           exec = false;
         }
 
-        uniqnes = `${item.Call}${item.Suffix}`;
+        uniqueness = `${item.Call}`;
+        // uniqueness = `${item.Call}${item.Suffix}`;
         if ( uniq.includes(uniqnes) ) {
           if (user_data_detail) {
             rowClassName = "user_row";
