@@ -1,6 +1,7 @@
 # xlxd-dash
 
-© 2025 RadioHUB — Licensed under the GPLv3 License — View on GitHub
+© 2025 RadioHUB — Licensed under the [GPLv3 License](https://www.gnu.org/licenses/gpl-3.0.html)
+
 
 ⚠️ **IN DEVELOPMENT** ⚠️
 
