@@ -32,7 +32,7 @@ function loadData() {
 
         uniqueness = `${item.Call}`;
         // uniqueness = `${item.Call}${item.Suffix}`;
-        if ( uniq.includes(uniqnes) ) {
+        if ( uniq.includes(uniqueness) ) {
           if (user_data_detail) {
             rowClassName = "user_row";
           } else {
@@ -40,7 +40,7 @@ function loadData() {
           }
         } else {
           rowClassName = "";
-          uniq.push(uniqnes);
+          uniq.push(uniqueness);
         }
 
         const row = document.createElement("tr");
