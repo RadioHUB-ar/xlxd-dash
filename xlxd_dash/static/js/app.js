@@ -59,7 +59,11 @@ function loadData() {
 
         const callsign = document.createElement("td");
         callsign.className = "border border-gray-300 dark:border-gray-700 px-2 py-1 text-xs sm:text-sm";
-        callsign.textContent = item.Call;
+        const link = document.createElement("a");
+        link.href = `https://www.qrz.com/db/${item.CallLink}`;
+        link.textContent = item.Call;
+        link.target = "_blank";
+        callsign.appendChild(link);
         row.appendChild(callsign);
 
         const suffix = document.createElement("td");
@@ -69,7 +73,11 @@ function loadData() {
 
         const dprs = document.createElement("td");
         dprs.className = "border border-gray-300 dark:border-gray-700 px-2 py-1 text-xs sm:text-sm text-center";
-        dprs.innerHTML = `<a href="https://aprs.fi/#!call=${item.Call}*" target="_blank">🛰️</a>`;
+        const dprslink = document.createElement("a");
+        dprslink.href = `https://aprs.fi/#!call=${item.CallLink}*`;
+        dprslink.textContent = "🛰️";
+        dprslink.target = "_blank";
+        dprs.appendChild(dprslink);
         row.appendChild(dprs);
 
         const via = document.createElement("td");
@@ -116,7 +124,11 @@ function loadData() {
 
         const callsign = document.createElement("td");
         callsign.className = "border border-gray-300 dark:border-gray-700 px-2 py-1 text-xs sm:text-sm";
-        callsign.textContent = item.Callsign;
+        const dprslink = document.createElement("a");
+        dprslink.href = `https://aprs.fi/#!call=${item.Callsign}`;
+        dprslink.textContent = item.Callsign;
+        dprslink.target = "_blank";
+        callsign.appendChild(dprslink);
         row.appendChild(callsign);
 
         const time = document.createElement("td");

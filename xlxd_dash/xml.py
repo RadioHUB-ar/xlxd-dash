@@ -60,8 +60,12 @@ def json_load():
             temp = station
             parts = station["Callsign"].split("/")
             temp["Call"] = parts[0].strip()
+            temp["CallLink"] = temp["Call"].split()[0]
+
             temp["Suffix"] = parts[1].strip() if len(parts) > 1 else ""
             temp["Flag"] = get_flag(temp["Call"])
+
+            temp["Via_node"] = re.sub(r"\s+", "-", temp["Via_node"].strip())
 
             fecha_str = temp["LastHeardTime"]
             fecha_obj = datetime.strptime(fecha_str, "%A %a %b %d %H:%M:%S %Y")
@@ -77,6 +81,8 @@ def json_load():
             temp = node
 
             temp["Flag"] = get_flag(temp["Callsign"])
+
+            temp["Callsign"] = re.sub(r"\s+", "-", temp["Callsign"].strip())
 
             fecha_str = temp["ConnectTime"]
             fecha_obj = datetime.strptime(fecha_str, "%A %a %b %d %H:%M:%S %Y")
