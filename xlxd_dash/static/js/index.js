@@ -1,6 +1,5 @@
 const users_table = document.getElementById("users_table");
 const nodes_table = document.getElementById("nodes_table");
-const toggleDark = document.getElementById("toggle-dark");
 const toggleRefresh = document.getElementById("toggle-refresh");
 const toggleUserDetail = document.getElementById("toggle-user_detail");
 const uptimeEl = document.getElementById("server_uptime");
@@ -161,18 +160,8 @@ function loadData() {
     });
 }
 
-// toggle dark mode
-function updateDarkMode() {
-  const isDark = document.documentElement.classList.contains("dark");
-  toggleDark.textContent = isDark ? "🌙" : "🔆";
-}
-
-toggleDark.addEventListener("click", () => {
-  document.documentElement.classList.toggle("dark");
-  updateDarkMode();
-});
-
 // toggle auto refresh
+toggleRefresh.classList.remove('hidden');
 let autoRefresh = false;
 let intervalId = null;
 toggleRefresh.addEventListener("click", () => {
@@ -189,6 +178,7 @@ toggleRefresh.addEventListener("click", () => {
 });
 
 // toogle hide user activity detail
+toggleUserDetail.classList.remove('hidden');
 let user_data_detail = false;
 toggleUserDetail.addEventListener("click", () => {
   user_data_detail = !user_data_detail;
@@ -206,32 +196,4 @@ toggleUserDetail.addEventListener("click", () => {
   }
 });
 
-
-// function capitalize(s)
-// {
-//     return s && s[0].toUpperCase() + s.slice(1).toLowerCase();
-// }
-
-function secondsToDhms(seconds) {
-  seconds = Number(seconds);
-  var d = Math.floor(seconds / (3600*24));
-  var h = Math.floor(seconds % (3600*24) / 3600);
-  var m = Math.floor(seconds % 3600 / 60);
-  var s = Math.floor(seconds % 60);
-  
-  var dDisplay = d > 0 ? d + "D " : "";
-  return dDisplay + h.toString().padStart(2,'0') + ":" + m.toString().padStart(2,'0') + ":" + s.toString().padStart(2,'0');
-}
-
-// function epoch2diff(epoch) {
-//   diff = Math.floor(Date.now()/1000) - epoch
-//   return secondsToDhms(diff) //date.getDate().toString().padStart(2,'0') + '/' + (date.getMonth()+1).toString().padStart(2,'0') + '/' + (date.getYear()-100) + ' ' + date.getHours().toString().padStart(2,'0') +':'+date.getMinutes().toString().padStart(2,'0')
-// }
-
-function epoch2dateTime(epoch) {
-  date = new Date(epoch*1000)
-  return date.getDate().toString().padStart(2,'0') + '/' + (date.getMonth()+1).toString().padStart(2,'0') + '/' + (date.getYear()-100) + ' ' + date.getHours().toString().padStart(2,'0') +':'+date.getMinutes().toString().padStart(2,'0')
-}
-
-updateDarkMode();
 loadData();
