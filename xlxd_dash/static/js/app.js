@@ -82,7 +82,11 @@ function loadData() {
 
         const via = document.createElement("td");
         via.className = "border border-gray-300 dark:border-gray-700 px-2 py-1 text-xs sm:text-sm";
-        via.textContent = item.Via_node;
+        const vialink = document.createElement("a");
+        vialink.href = `https://aprs.fi/#!call=${item.Via_node}`;
+        vialink.textContent = item.Via_node;
+        vialink.target = "_blank";
+        via.appendChild(vialink);
         row.appendChild(via);
 
         const time = document.createElement("td");
