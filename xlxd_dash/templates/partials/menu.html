@@ -6,7 +6,7 @@
       </svg>
     </button>
   
-    <div x-show="open" @click.outside="open = false" class="absolute mt-1 border border-gray-300 dark:border-gray-500 shadow w-48">
+    <div id="popupmenu" x-show="open" @click.outside="open = false" class="absolute mt-1 border border-gray-300 dark:border-gray-500 shadow w-48 hidden">
       <a href="/" target="_self" class="block px-4 py-2 bg-gray-100 dark:bg-gray-800 hover:underline">Home</a>
       <a href="/reflist" target="_self" class="block px-4 py-2 bg-gray-100 dark:bg-gray-800 hover:underline">Reflectors List</a>
       {% if links %}
@@ -23,16 +23,3 @@
     <button id="toggle-dark" class="px-2 py-1 text-xs sm:text-sm border rounded">🌙</button>
   </div>
 </nav>
-
-<div id="notice" class="max-w-3xl mx-auto mt-6 p-4 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-md flex justify-between items-center space-x-4 transition-opacity duration-500 opacity-0 hidden">
-  <div>
-      <p class="text-sm">
-        <strong>🇺🇸</strong> This site stores preferences only in your browser to enhance your experience. <u>No information of any kind is sent to the server.</u><br>
-        <br>
-        <strong>🇪🇸</strong> Este sitio guarda configuraciones solo en tu navegador para mejorar tu experiencia. <u>No se envía ningún tipo de información al servidor.</u>
-      </p>
-  </div>
-  <button onclick="closeNotice()" class="bg-gray-300 dark:bg-gray-500 text-sm px-3 py-1 rounded">
-      Close
-  </button>
-</div>

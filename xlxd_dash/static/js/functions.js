@@ -1,18 +1,22 @@
 function secondsToDhms(seconds) {
-    seconds = Number(seconds);
-    var d = Math.floor(seconds / (3600*24));
-    var h = Math.floor(seconds % (3600*24) / 3600);
-    var m = Math.floor(seconds % 3600 / 60);
-    var s = Math.floor(seconds % 60);
-    
-    var dDisplay = d > 0 ? d + "D " : "";
-    return dDisplay + h.toString().padStart(2,'0') + ":" + m.toString().padStart(2,'0') + ":" + s.toString().padStart(2,'0');
-  }
+  seconds = Number(seconds);
+  var d = Math.floor(seconds / (3600*24));
+  var h = Math.floor(seconds % (3600*24) / 3600);
+  var m = Math.floor(seconds % 3600 / 60);
+  var s = Math.floor(seconds % 60);
+  
+  var dDisplay = d > 0 ? d + "D " : "";
+  return dDisplay + h.toString().padStart(2,'0') + ":" + m.toString().padStart(2,'0') + ":" + s.toString().padStart(2,'0');
+}
 
-  function epoch2dateTime(epoch) {
-    date = new Date(epoch*1000)
-    return date.getDate().toString().padStart(2,'0') + '/' + (date.getMonth()+1).toString().padStart(2,'0') + '/' + (date.getYear()-100) + ' ' + date.getHours().toString().padStart(2,'0') +':'+date.getMinutes().toString().padStart(2,'0')
-  }
+function epoch2dateTime(epoch) {
+  date = new Date(epoch*1000)
+  return date.getDate().toString().padStart(2,'0') + '/' + (date.getMonth()+1).toString().padStart(2,'0') + '/' + (date.getYear()-100) + ' ' + date.getHours().toString().padStart(2,'0') +':'+date.getMinutes().toString().padStart(2,'0')
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById('popupmenu').classList.remove('hidden');
+});
 
 // toggle dark mode
 document.addEventListener("DOMContentLoaded", () => {
@@ -41,10 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateDarkMode();
 });
-
-function toggleDropdown() {
-  document.getElementById("dropdown").classList.toggle("hidden");
-}
 
 function setLocal(key, value) {
   localStorage.setItem(key, JSON.stringify(value));

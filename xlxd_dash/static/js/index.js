@@ -166,7 +166,6 @@ let autoRefresh = false;
 let intervalId = null;
 toggleRefresh.addEventListener("click", () => {
   autoRefresh = !autoRefresh;
-
   if (autoRefresh) {
     toggleRefresh.textContent = "🔁";
     loadData();
@@ -179,10 +178,17 @@ toggleRefresh.addEventListener("click", () => {
 
 // toogle hide user activity detail
 toggleUserDetail.classList.remove('hidden');
-let user_data_detail = false;
+let user_data_detail = getLocal("user_data_detail")
+if (user_data_detail === null) {
+  user_data_detail = false;
+}
+if (user_data_detail === true) {
+  toggleUserDetail.textContent = "👁️";
+} else {
+  toggleUserDetail.textContent = "🙈";
+}
 toggleUserDetail.addEventListener("click", () => {
   user_data_detail = !user_data_detail;
-
   if (user_data_detail) {
     toggleUserDetail.textContent = "👁️";
     document.querySelectorAll('.user_row').forEach(el => {
@@ -194,6 +200,7 @@ toggleUserDetail.addEventListener("click", () => {
       el.classList.add('hidden');
     });
   }
+  setLocal("user_data_detail", user_data_detail);
 });
 
 loadData();
