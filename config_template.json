@@ -10,14 +10,14 @@
       "B": "Net Only",
       "C": "Testing"
     },
-    "description": "Live dashboard for XLX128 reflector. Track D-STAR / DMR / YSF / AMBE users, activity, and more. Powered by RadioHUB.",
+    "description": "Live dashboard for XLX128 reflector. Track D-STAR / DMR / YSF / AMBE users, activity, and more.",
     "keywords": "XLX128, DV, D-STAR, DSTAR, DMR, YSF, AMBE, reflector, dashboard, hamradio, RadioHUB",
     "links": [
       {"name": "Name", "url": "https://link.example.org"},
       {"name": "Name", "url": "https://link.example.org"},
       {"name": "Name", "url": "https://link.example.org"}
     ],
-    "footer": "* All times are displayed in your local browser time<br>© 2025 RadioHUB — Licensed under the <a href=\"https://www.gnu.org/licenses/gpl-3.0.html\" target=\"_blank\" class=\"underline hover:text-blue-600\">GPLv3 License</a> — <a href=\"https://github.com/RadioHUB-ar/xlxd-dash\" target=\"_blank\" class=\"underline hover:text-blue-600\">View on GitHub</a>"
+    "footer": "* All times are displayed in your local browser time"
   },
   "xlxd": {
     "xml": "/var/log/xlxd/xlxd.xml",
