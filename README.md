@@ -59,6 +59,16 @@ Refer to xlxd documentation for more info about callhome and this values.
 }
 ```
 
+### Do a first run in foreground
+Inside the venv (source ./.venv/bin/activate)
+```
+python3 app.py
+```
+
+Check output for errors
+
+If everything appears to be in order, proceed with the installation of the service units
+
 ### As root
 ```
 cat << "EOF" > /etc/systemd/system/xlxd-dash.service
