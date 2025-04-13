@@ -1,0 +1,26 @@
+<nav class="bg-gray-100 dark:bg-gray-800 px-4 py-2 flex justify-between items-center mb-4 sticky top-0 z-50">
+  <div x-data="{ open: false }" class="relative inline-block">
+    <button @click="open = !open" class="px-2 py-2 rounded bg-gray-100 dark:bg-gray-800">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  
+    <div id="popupmenu" x-show="open" @click.outside="open = false" class="absolute mt-1 border border-gray-300 dark:border-gray-500 shadow w-48 hidden">
+      <a href="/" target="_self" class="block px-4 py-2 bg-gray-100 dark:bg-gray-800 hover:underline">Home</a>
+      <a href="/reflist" target="_self" class="block px-4 py-2 bg-gray-100 dark:bg-gray-800 hover:underline">Reflectors List</a>
+      {% if links %}
+      <hr class="border border-gray-300 dark:border-gray-500" />
+      {% for link in links %}
+      <a href="{{ link.url }}" target="_blank" class="block px-4 py-2 bg-gray-100 dark:bg-gray-800 hover:underline">{{ link.name }}</a>
+      {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+  <div class="flex gap-2">
+    <button id="toggle-utc" class="hidden px-2 py-1 text-xs sm:text-sm border rounded">🏠</button>
+    <button id="toggle-user_detail" class="hidden px-2 py-1 text-xs sm:text-sm border rounded">🙈</button>
+    <button id="toggle-refresh" class="hidden px-2 py-1 text-xs sm:text-sm border rounded">⏸️</button>
+    <button id="toggle-dark" class="px-2 py-1 text-xs sm:text-sm border rounded">🌙</button>
+  </div>
+</nav>

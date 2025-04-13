@@ -1,0 +1,30 @@
+{
+  "service": {
+    "name": "XLX???",
+    "dashURL": "http://yourdash.example.org",
+    "country": "Argentina",
+    "comment": "RadioHUB",
+    "author": "RadioHUB",
+    "modules": {
+      "A": "Main [AMBE-Transcoded]",
+      "B": "Net Only",
+      "C": "Testing"
+    },
+    "description": "Live dashboard for XLX128 reflector. Track D-STAR / DMR / YSF / AMBE users, activity, and more.",
+    "keywords": "XLX128, DV, D-STAR, DSTAR, DMR, YSF, AMBE, reflector, dashboard, hamradio, RadioHUB",
+    "links": [
+      {"name": "Name", "url": "https://link.example.org"},
+      {"name": "Name", "url": "https://link.example.org"},
+      {"name": "Name", "url": "https://link.example.org"}
+    ],
+    "footer": "Footer message",
+    "nodesIP": 2,
+    "peersIP": 2
+  },
+  "xlxd": {
+    "xml": "/var/log/xlxd/xlxd.xml",
+    "pidfile": "/run/xlxd.pid",
+    "apiURL": "http://xlxapi.rlx.lu/api.php",
+    "callhome": false
+  }
+}

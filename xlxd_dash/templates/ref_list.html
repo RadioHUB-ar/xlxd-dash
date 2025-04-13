@@ -1,0 +1,41 @@
+{% include "partials/head.html" %}
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
+  {% include "partials/menu.html" %}
+  <div class="max-w-6xl mx-auto p-2">
+    <div class="flex justify-between items-center mb-4">
+      <div class="flex items-center gap-4">
+        <img src="/static/img/logo-512.png" alt="Logo" class="h-10 w-auto">
+        <h1 class="text-2xl sm:text-3xl font-bold">{{name}}</h1>
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto space-y-6">
+    <!-- INI PAGE -->
+      <div id="ref_div" class="overflow-x-auto">
+        <table class="table-auto w-full table-auto w-full border border-gray-200 dark:border-gray-700">
+          <thead class="bg-gray-100 dark:bg-gray-800">
+            <tr><th colspan="100%">Reflector List</th></tr>
+            <tr>
+              <th class="px-2 py-1 text-xs sm:text-sm">Name</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">Country</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">Comment</th>
+            </tr>
+          </thead>
+          <tbody id="ref_table" class="text-sm">
+            <td colspan="100%" class="text-center px-2 py-2 text-xs sm:text-sm text-gray-500">
+              ... LOADING ...
+            </td>
+          </tbody>    
+        </table>
+      </div>
+
+    <!-- END PAGE -->
+    </div>
+  </div>
+</body>
+{% if footer %}
+<footer class="w-full text-center py-4 text-sm text-gray-500 dark:text-gray-400 bottom-0">
+  {{footer|safe}}<br><br>
+</footer>
+{% endif %}
+</html>

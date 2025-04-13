@@ -1,0 +1,41 @@
+# Entornos virtuales
+venv/
+.env/
+.venv/
+
+# Archivos compilados
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de logs y bases temporales
+*.log
+*.sqlite3
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Config de entorno
+.env
+*.env
+
+# Archivos de configuración de editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Configs de testing o cobertura
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+config.json
+config_tg.json

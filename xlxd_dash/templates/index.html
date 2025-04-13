@@ -1,0 +1,147 @@
+{% include "partials/head.html" %}
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
+  {% include "partials/menu.html" %}
+  <div class="max-w-6xl mx-auto p-2">
+    <div class="flex justify-between items-center mb-4">
+      <div class="flex items-center gap-4">
+        <img src="/static/img/logo-512.png" alt="Logo" class="h-10 w-auto">
+        <h1 class="text-2xl sm:text-3xl font-bold">{{name}}</h1>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto space-y-6">
+      {% include "partials/localstorage.html" %}
+      {% include "partials/whatsnew.html" %}
+      <!-- INI PAGE -->
+      <script>
+        uptime = {{uptime}}
+      </script>
+      {% if modules %}
+      <div id="modules_div" class="overflow-x-auto">
+        <table class="w-full table-auto border border-gray-300 dark:border-gray-700 text-sm">
+          <thead>
+            <tr>
+              <th colspan="2" class="text-left px-4 py-2 bg-gray-100 dark:bg-gray-800">
+                Modules
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for module, desc in modules.items() %}
+            <tr class="border-t border-gray-300 dark:border-gray-700">
+              <td class="bg-gray-100 dark:bg-gray-800 px-4 py-2">{{module}}</td>
+              <td class="bg-white dark:bg-gray-900 font-medium px-4 py-2 whitespace-nowrap">{{desc}}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% endif %}
+
+
+      <div id="users_div" class="hidden overflow-x-auto">
+        <table class="table-auto w-full table-auto w-full border border-gray-200 dark:border-gray-700">
+          <thead class="bg-gray-100 dark:bg-gray-800">
+            <tr><th colspan="100%">Users</th></tr>
+            <tr>
+              <th class="px-2 py-1 text-xs sm:text-sm hidden md:table-cell">#</th>
+              <th class="px-2 py-1 text-xs sm:text-sm hidden md:table-cell">🏳️</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">Callsign</th>
+              <th class="px-2 py-1 text-xs sm:text-sm hidden md:table-cell">Suffix</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">🛰️</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">Via / Peer</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">Last heard</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">On</th>
+            </tr>
+          </thead>
+          <tbody id="users_table" class="text-sm">
+          </tbody>    
+        </table>
+      </div>
+
+      <div id="nodes_div" class="hidden overflow-x-auto">
+        <table class="table-auto w-full table-auto w-full border border-gray-200 dark:border-gray-700">
+          <thead class="bg-gray-100 dark:bg-gray-800">
+            <tr><th colspan="100%">Nodes</th></tr>
+            <tr>
+              <th class="px-2 py-1 text-xs sm:text-sm hidden md:table-cell">#</th>
+              <th class="px-2 py-1 text-xs sm:text-sm hidden md:table-cell">🏳️</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">DV Station</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">Last Heard</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">Linked</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">Protocol</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">On</th>
+              <th id="nodesIP" class="px-2 py-1 text-xs sm:text-sm hidden">IP</th> <!-- md:table-cell -->
+            </tr>
+          </thead>
+          <tbody id="nodes_table" class="text-sm">
+          </tbody>    
+        </table>
+      </div>
+
+      <div id="peers_div" class="hidden overflow-x-auto">
+        <table class="table-auto w-full table-auto w-full border border-gray-200 dark:border-gray-700">
+          <thead class="bg-gray-100 dark:bg-gray-800">
+            <tr><th colspan="100%">Peers</th></tr>
+            <tr>
+              <th class="px-2 py-1 text-xs sm:text-sm hidden md:table-cell">#</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">XLX Peer</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">Last Heard</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">Linked</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">Protocol</th>
+              <th class="px-2 py-1 text-xs sm:text-sm">Module</th>
+              <th id="peersIP" class="px-2 py-1 text-xs sm:text-sm hidden">IP</th> <!-- md:table-cell -->
+            </tr>
+          </thead>
+          <tbody id="peers_table" class="text-sm">
+          </tbody>    
+        </table>
+      </div>
+
+      <div class="overflow-x-auto max-w-3xl mx-auto my-6">
+        <table class="w-full table-auto border border-gray-300 dark:border-gray-700 text-sm">
+          <thead>
+            <tr>
+              <th colspan="2" class="text-left px-4 py-2 bg-gray-100 dark:bg-gray-800">
+                Server Info
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t border-gray-300 dark:border-gray-700">
+              <td class="bg-gray-100 dark:bg-gray-800 px-4 py-2">Name</td>
+              <td class="bg-white dark:bg-gray-900 font-medium px-4 py-2 whitespace-nowrap">{{name}}</td>
+            </tr>
+            <tr class="border-t border-gray-300 dark:border-gray-700">
+              <td class="bg-gray-100 dark:bg-gray-800 px-4 py-2">Comment</td>
+              <td class="bg-white dark:bg-gray-900 font-medium px-4 py-2 whitespace-nowrap">{{comment}}</td>
+            </tr>
+            <tr class="border-t border-gray-300 dark:border-gray-700">
+              <td class="bg-gray-100 dark:bg-gray-800 px-4 py-2">Country</td>
+              <td class="bg-white dark:bg-gray-900 font-medium px-4 py-2 whitespace-nowrap">{{country}}</td>
+            </tr>
+            <tr class="border-t border-gray-300 dark:border-gray-700">
+              <td class="bg-gray-100 dark:bg-gray-800 px-4 py-2">Author</td>
+              <td class="bg-white dark:bg-gray-900 font-medium px-4 py-2 whitespace-nowrap">{{author}}</td>
+            </tr>
+            <tr class="border-t border-gray-300 dark:border-gray-700">
+              <td class="bg-gray-100 dark:bg-gray-800 px-4 py-2">Binary Version</td>
+              <td class="bg-white dark:bg-gray-900 font-medium px-4 py-2 whitespace-nowrap">{{version}}</td>
+            </tr>
+            <tr class="border-t border-gray-300 dark:border-gray-700">
+              <td class="bg-gray-100 dark:bg-gray-800 px-4 py-2">Dash Version</td>
+              <td class="bg-white dark:bg-gray-900 font-medium px-4 py-2 whitespace-nowrap">{{dash_version}}</td>
+            </tr>
+            <tr class="border-t border-gray-300 dark:border-gray-700">
+              <td class="bg-gray-100 dark:bg-gray-800 px-4 py-2">Service Uptime</td>
+              <td id="server_uptime" class="bg-white dark:bg-gray-900 font-medium px-4 py-2 whitespace-nowrap"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    <!-- END PAGE -->
+    </div>
+  </div>
+</body>
+  {% include "partials/footer.html" %}
+</html>

@@ -1,0 +1,15 @@
+{
+  "service": {
+    "token": "",
+    "modules": [ "A", "B" ],
+    "user_online": [],
+    "user_gap": 60,
+    "node_online": [],
+    "node_offline": [],
+    "node_delay": 60,
+    "logger": []
+  },
+  "xlxd": {
+    "xml": "/var/log/xlxd/xlxd.xml"
+  }
+}
