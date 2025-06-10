@@ -5,8 +5,20 @@ from xlxd_dash import config
 
 def xlxd_data():
     res = {}
+    res['running'] = False
+
+    pid = 0
     pid_file = config["xlxd"]["pidfile"]
     res["uptime"] = int(time.time() - os.path.getctime(pid_file))
+
+    with open(pid_file) as f:
+        pid = f.read()
+
+    try:
+        os.kill(int(pid), 0)
+        res['running'] = True
+    except:
+        pass
 
     xml_file = config["xlxd"]["xml"]
     with open(xml_file) as f:

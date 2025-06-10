@@ -55,6 +55,27 @@ def get_ref_list():
 def get_data():
     return json_load()
 
+@app.route("/xlxd_data")
+def get_xlxd_data():
+    return xlxd_data()
+
+@app.route("/get_node")
+def get_node():
+    try:
+        if request.is_json:
+            params = request.get_json()
+            call = params.get('call')
+            proto = params.get('proto')
+            if call and proto:
+                data = json_load()
+                linked_nodes = data["linked_nodes"]
+                for entry in linked_nodes:
+                    if entry.get("Callsign") == call and entry.get("Protocol") == proto:
+                        return {"running": True}
+    except:
+        pass
+    return {"running": False}
+
 @app.route("/robots.txt")
 def robots():
     return send_from_directory("static", "robots.txt")
