@@ -90,21 +90,7 @@ function closewhatsnew() {
     setTimeout(() => whatsnew.classList.add('hidden'), 500);
 }
 
-const noticeKey = 'localNoticeDismissed';
-function closeNotice() {
-    localStorage.setItem(noticeKey, 'true');
-    const notice = document.getElementById('notice');
-    notice.classList.add('opacity-0');
-    setTimeout(() => notice.classList.add('hidden'), 500);
-}
-
 window.addEventListener('DOMContentLoaded', () => {
-  if (!localStorage.getItem(noticeKey)) {
-      const notice = document.getElementById('notice');
-      notice.classList.remove('hidden');
-      setTimeout(() => notice.classList.add('opacity-100'), 50);
-  }
-
   if (!localStorage.getItem(whatsnewKey)) {
     const whatsnew = document.getElementById('whatsnew');
     whatsnew.classList.remove('hidden');
