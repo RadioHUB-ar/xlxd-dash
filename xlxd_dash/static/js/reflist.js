@@ -1,6 +1,15 @@
 const ref_table = document.getElementById("ref_table");
 const ref_status = document.getElementById("ref_status");
 const ref_status_message = document.getElementById("ref_status_message");
+const ref_filter = document.getElementById("ref_filter");
+const no_filter_results = document.createElement("tr");
+
+no_filter_results.className = "hidden";
+no_filter_results.innerHTML = `
+  <td colspan="100%" class="text-center px-2 py-2 text-xs sm:text-sm text-gray-500">
+    No matching reflectors
+  </td>
+`;
 
 function secondsToDhms(seconds) {
   seconds = Number(seconds);
@@ -36,6 +45,13 @@ function loadData() {
       ref_status.classList.add("hidden");
       reflectors.forEach(item => {
         const row = document.createElement("tr");
+        row.dataset.search = [
+          item.name,
+          item.country,
+          item.comment,
+          item.dashboardurl,
+          item.online ? "online" : "offline"
+        ].join(" ").toLowerCase();
 
         let order = document.createElement("td");
         order.className = "border border-gray-300 dark:border-gray-700 px-2 py-1 text-xs sm:text-sm";
@@ -62,6 +78,8 @@ function loadData() {
 
         ref_table.appendChild(row);
       });
+      ref_table.appendChild(no_filter_results);
+      filterReflectors();
     })
     .catch(error => {
       ref_status.classList.remove("hidden");
@@ -76,5 +94,22 @@ function loadData() {
       console.error(error);
     });
 }
+
+function filterReflectors() {
+  const filter = ref_filter.value.trim().toLowerCase();
+  let visibleRows = 0;
+
+  ref_table.querySelectorAll("tr[data-search]").forEach(row => {
+    const matches = row.dataset.search.includes(filter);
+    row.classList.toggle("hidden", !matches);
+    if (matches) {
+      visibleRows += 1;
+    }
+  });
+
+  no_filter_results.classList.toggle("hidden", !filter || visibleRows > 0);
+}
+
+ref_filter.addEventListener("input", filterReflectors);
 
 loadData();
