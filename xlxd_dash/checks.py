@@ -8,13 +8,13 @@ def run_checks():
     if not bool(re.fullmatch(r"XLX[A-Z0-9]{3}", config["service"]["name"])):
         raise SystemExit(f"XLX name not set or invalid\nCheck GitHub page for more information.")
 
-    checkfiles = [
-        config["xlxd"]["pidfile"],
-        config["xlxd"]["xml"],
-    ]
-    for file in checkfiles:
-        if not Path(file).exists():
-            raise SystemExit(f"Error reading file {file}\nCheck GitHub page for more information.")
+    pid_file = config["xlxd"]["pidfile"]
+    if not Path(pid_file).exists():
+        print(f"Warning: PID file not found: {pid_file}")
+
+    xml_file = config["xlxd"]["xml"]
+    if not Path(xml_file).exists():
+        print(f"Warning: XML file not found yet: {xml_file}")
 
     if config["xlxd"]["callhome"] == True:
         print("Startup callhome...")

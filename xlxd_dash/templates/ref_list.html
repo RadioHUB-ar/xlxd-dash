@@ -11,6 +11,10 @@
 
     <div class="max-w-6xl mx-auto space-y-6">
     <!-- INI PAGE -->
+      <div id="ref_status" class="hidden border border-gray-300 dark:border-gray-700 bg-gray-100 dark:bg-gray-800 px-4 py-3 text-sm">
+        <div class="font-semibold">Reflector list unavailable</div>
+        <div id="ref_status_message" class="text-gray-600 dark:text-gray-300 mt-1"></div>
+      </div>
       <div id="ref_div" class="overflow-x-auto">
         <table class="table-auto w-full table-auto w-full border border-gray-200 dark:border-gray-700">
           <thead class="bg-gray-100 dark:bg-gray-800">
@@ -22,9 +26,11 @@
             </tr>
           </thead>
           <tbody id="ref_table" class="text-sm">
-            <td colspan="100%" class="text-center px-2 py-2 text-xs sm:text-sm text-gray-500">
-              ... LOADING ...
-            </td>
+            <tr>
+              <td colspan="100%" class="text-center px-2 py-2 text-xs sm:text-sm text-gray-500">
+                ... LOADING ...
+              </td>
+            </tr>
           </tbody>    
         </table>
       </div>

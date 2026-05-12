@@ -1,4 +1,6 @@
 const ref_table = document.getElementById("ref_table");
+const ref_status = document.getElementById("ref_status");
+const ref_status_message = document.getElementById("ref_status_message");
 
 function secondsToDhms(seconds) {
   seconds = Number(seconds);
@@ -12,26 +14,34 @@ function secondsToDhms(seconds) {
 }
 
 function loadData() {
-  const down_time = 1800+600;
-  const now = Math.floor(Date.now() / 1000);
-  const uniq = []
-  rowClassName = ""
   fetch("/getreflist")
     .then(res => res.json())
     .then(data => {
-      num = 1
-      exec = true;
       ref_table.innerHTML = "";
-      const reflectors = Object.values(data.heard_users || {});
+      const reflectors = Array.isArray(data.reflectors) ? data.reflectors : [];
 
-      data['XLXAPI']['answer']['reflectorlist']['reflector'].forEach(item => {
+      if (data.available === false || reflectors.length === 0) {
+        ref_status.classList.remove("hidden");
+        ref_status_message.textContent = data.message || "No reflector data available.";
+        ref_table.innerHTML = `
+          <tr>
+            <td colspan="100%" class="text-center px-2 py-2 text-xs sm:text-sm text-gray-500">
+              No reflector data available
+            </td>
+          </tr>
+        `;
+        return;
+      }
+
+      ref_status.classList.add("hidden");
+      reflectors.forEach(item => {
         const row = document.createElement("tr");
 
-        order = document.createElement("td");
+        let order = document.createElement("td");
         order.className = "border border-gray-300 dark:border-gray-700 px-2 py-1 text-xs sm:text-sm";
-        link = document.createElement("a");
+        const link = document.createElement("a");
         link.href = item.dashboardurl;
-        if (item.lastcontact > now - down_time) {
+        if (item.online) {
           link.textContent = `✅ ${item.name}`;
         } else {
           link.textContent = `❌ ${item.name}`;
@@ -52,6 +62,18 @@ function loadData() {
 
         ref_table.appendChild(row);
       });
+    })
+    .catch(error => {
+      ref_status.classList.remove("hidden");
+      ref_status_message.textContent = "Could not load reflector list.";
+      ref_table.innerHTML = `
+        <tr>
+          <td colspan="100%" class="text-center px-2 py-2 text-xs sm:text-sm text-gray-500">
+            Could not load reflector list
+          </td>
+        </tr>
+      `;
+      console.error(error);
     });
 }
 

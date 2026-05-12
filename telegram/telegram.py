@@ -3,15 +3,20 @@ import xml.etree.ElementTree as ET
 import re
 import requests
 import json
-from datetime import datetime
+import os
+import sys
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
-import os
 import threading
 import traceback
 
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, PROJECT_ROOT)
+
+from xlxd_common import get_flag, normalize_xlxd_xml, parse_xlxd_datetime, read_xlxd_xml
+
 ref_name = ""
-with open("./config_tg.json", "r", encoding="utf-8") as f:
+with open(os.path.join(PROJECT_ROOT, "config_tg.json"), "r", encoding="utf-8") as f:
     config = json.load(f)
 
 modules = config["service"]["modules"]
@@ -25,9 +30,6 @@ xml_file = config["xlxd"]["xml"]
 TG_URL = f"https://api.telegram.org/bot{config['service']['token']}/sendMessage"
 
 dt_format = "%A %a %b %d %H:%M:%S %Y"
-call_country = "./xlxd_dash/callprefix.json"
-with open(call_country, "r", encoding="utf-8") as f:
-    callprefix = json.load(f)
 
 nodes_old = {}
 nodes_off = {}
@@ -40,46 +42,51 @@ timer = None
 
 def send_message(msg, dest):
     for CHAT_ID in dest:
-      data = {"chat_id": CHAT_ID, "text": msg}
-      res = requests.post(TG_URL, data=data)
-    #   print(res.text)
+        while True:
+            data = {"chat_id": CHAT_ID, "text": msg}
+            try:
+                res = requests.post(TG_URL, data=data, timeout=10)
+            except Exception as e:
+                print(f"Error: {e}")
+                time.sleep(5)
+                continue
 
-def call_flag(country):
-    return ''.join(chr(0x1F1E6 + ord(letra) - ord('A')) for letra in country.upper())
+            if res.status_code == 200:
+                break
 
-def get_flag(callsign):
-    while callsign:
-        if callsign in callprefix:
-            return call_flag(callprefix[callsign][0])
-        callsign = callsign[:-1]
-    return ""
+            print(f"Error HTTP {res.status_code}. Reintentando…")
+            time.sleep(5)
+
+def split_node_callsign(callsign):
+    parts = callsign.split(maxsplit=1)
+    if len(parts) == 2:
+        return parts[0], parts[1]
+    return callsign, ""
+
+def format_node_call(call, initial):
+    return f"{call}-{initial}" if initial else call
 
 def load_xml():
-    with open(xml_file, "r", encoding="utf-8") as f:
-        XML = f.read()
+    xml = read_xlxd_xml(xml_file)
+    if not xml["available"]:
+        return xml
 
-    match = re.match(r'(<\?xml.*?\?>)', XML)
-    header = match.group(1) if match else ""
-
-    ref_match = re.search(r"<(XLX\d+) ", XML)
-    if ref_match:
-        ref_name = ref_match.group(1)
-
-    XML = XML[len(header):].strip()
-
-    XML = re.sub(r"<([\w]+)\s+([\w\s]+)>", lambda m: f"<{m.group(1)}_{m.group(2).replace(' ', '_')}>", XML)
-    XML = re.sub(r"</([\w]+)\s+([\w\s]+)>", lambda m: f"</{m.group(1)}_{m.group(2).replace(' ', '_')}>", XML)
-
-    XML = f"<ROOT>\n{XML}\n</ROOT>"
-
-    return ref_name, XML
+    data = normalize_xlxd_xml(xml["xml"], root_name="ROOT")
+    data["available"] = True
+    return data
 
 def analizar_xml():
     global nodes_old, stations_old, notif, process, nodes_off, ref_name
     now = time.strftime("%Y%m%d_%H%M%S", time.localtime())
     now_epoch = int(time.time())
     try:
-        ref_name, XML = load_xml()
+        xml = load_xml()
+        if not xml["available"]:
+            send_message(xml["message"], logger)
+            return False
+
+        ref_name = xml["name"]
+        XML = xml["data"]
 
         if not process:
             send_message(f"REF: {ref_name}", logger)
@@ -90,15 +97,15 @@ def analizar_xml():
         nodes_now = {}
         for node in root.findall(".//NODE"):
             callsign = (node.findtext("Callsign") or "").strip()
-            call, initial = callsign.split(maxsplit=1)
+            call, initial = split_node_callsign(callsign)
             ip = (node.findtext("IP") or "").strip()
             linked_module = (node.findtext("LinkedModule") or "").strip()
             protocol = (node.findtext("Protocol") or "").strip()
             connect_time = (node.findtext("ConnectTime") or "").strip()
             last_heard_time = (node.findtext("LastHeardTime") or "").strip()
 
-            connect_time_epoch = int(datetime.strptime(connect_time, dt_format).timestamp()) if connect_time else 0
-            last_heard_time_epoch = int(datetime.strptime(last_heard_time, dt_format).timestamp()) if last_heard_time else 0
+            connect_time_epoch = parse_xlxd_datetime(connect_time)
+            last_heard_time_epoch = parse_xlxd_datetime(last_heard_time)
 
             index = (callsign + "-" + protocol or "").strip().replace(' ','_')
             if index in nodes_now.keys():
@@ -137,19 +144,20 @@ def analizar_xml():
                 for key in nuevos:
                     Call = nodes_now[key]["Call"]
                     Initial = nodes_now[key]["Initial"]
+                    NodeCall = format_node_call(Call, Initial)
                     LinkedModule = nodes_now[key]["LinkedModule"]
                     Protocol = nodes_now[key]["Protocol"]
                     flag = get_flag(Call)
                     if key in nodes_off.keys():
                         del nodes_off[key]
-                        send_message(f"Online {Call}-{Initial} On {ref_name} {LinkedModule} Protocol {Protocol}", logger)
+                        send_message(f"Online {NodeCall} On {ref_name} {LinkedModule} Protocol {Protocol}", logger)
                     else:
                         if (LinkedModule in modules):
                             notifto = logger + node_offline
                         else:
                             notifto = logger
 
-                        send_message(f"✅{flag} {Call}-{Initial} On {ref_name} {LinkedModule} Protocol {Protocol}", notifto)
+                        send_message(f"✅{flag} {NodeCall} On {ref_name} {LinkedModule} Protocol {Protocol}", notifto)
 
             ### NODES - si faltan nodes que antes estaban (old - now)
             eliminados = nodes_old.keys() - nodes_now.keys()
@@ -157,9 +165,10 @@ def analizar_xml():
                 for key in eliminados:
                     Call = nodes_old[key]["Call"]
                     Initial = nodes_old[key]["Initial"]
+                    NodeCall = format_node_call(Call, Initial)
                     LinkedModule = nodes_old[key]["LinkedModule"]
                     Protocol = nodes_old[key]["Protocol"]
-                    send_message(f"Offline {Call}-{Initial} From {ref_name} {LinkedModule} Protocol {Protocol}", logger)
+                    send_message(f"Offline {NodeCall} From {ref_name} {LinkedModule} Protocol {Protocol}", logger)
                     nodes_off[key] = nodes_old[key]
                     nodes_off[key]["last_off"] = now_epoch
 
@@ -167,6 +176,7 @@ def analizar_xml():
                 if nodes_off[key]["last_off"] + node_delay < now_epoch:
                     Call = nodes_off[key]["Call"]
                     Initial = nodes_off[key]["Initial"]
+                    NodeCall = format_node_call(Call, Initial)
                     LinkedModule = nodes_off[key]["LinkedModule"]
                     Protocol = nodes_off[key]["Protocol"]
                     flag = get_flag(Call)
@@ -174,7 +184,7 @@ def analizar_xml():
                         notifto = logger + node_offline
                     else:
                         notifto = logger
-                    send_message(f"❌{flag} {Call}-{Initial} From {ref_name} {LinkedModule} Protocol {Protocol}", notifto)
+                    send_message(f"❌{flag} {NodeCall} From {ref_name} {LinkedModule} Protocol {Protocol}", notifto)
     
                     del nodes_off[key]
 
@@ -193,7 +203,7 @@ def analizar_xml():
             via_peer = (station.findtext("Via_peer") or "").strip()
             last_heard_time = (station.findtext("LastHeardTime") or "").strip()
 
-            last_heard_time_epoch = int(datetime.strptime(last_heard_time, dt_format).timestamp()) if last_heard_time else 0
+            last_heard_time_epoch = parse_xlxd_datetime(last_heard_time)
 
             index = (callsign or "").strip().replace(' ', '_')
 
@@ -287,4 +297,5 @@ if __name__ == "__main__":
         process = analizar_xml()
         if process:
             INITmonitor()
-            time.sleep(1)
+        else:
+            time.sleep(30)

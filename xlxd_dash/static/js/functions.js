@@ -38,7 +38,10 @@ function epoch2dateTime(epoch) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById('popupmenu').classList.remove('hidden');
+  const popupmenu = document.getElementById('popupmenu');
+  if (popupmenu) {
+    popupmenu.classList.remove('hidden');
+  }
 });
 
 // toggle dark mode
@@ -61,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateDarkMode();
   });
 
-  darknow = getLocal('darkmode');
+  const darknow = getLocal('darkmode');
   if (darknow === false) {
     document.documentElement.classList.remove("dark");
   }
@@ -86,6 +89,9 @@ const whatsnewKey = 'localwhatsnewDismissed';
 function closewhatsnew() {
     localStorage.setItem(whatsnewKey, 'true');
     const whatsnew = document.getElementById('whatsnew');
+    if (!whatsnew) {
+      return;
+    }
     whatsnew.classList.add('opacity-0');
     setTimeout(() => whatsnew.classList.add('hidden'), 500);
 }
@@ -93,6 +99,9 @@ function closewhatsnew() {
 window.addEventListener('DOMContentLoaded', () => {
   if (!localStorage.getItem(whatsnewKey)) {
     const whatsnew = document.getElementById('whatsnew');
+    if (!whatsnew) {
+      return;
+    }
     whatsnew.classList.remove('hidden');
     setTimeout(() => whatsnew.classList.add('opacity-100'), 50);
   }

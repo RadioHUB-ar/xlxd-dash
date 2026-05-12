@@ -24,8 +24,33 @@
   <meta name="twitter:description" content="{{description}} Powered by RadioHUB.">
   <meta name="twitter:image" content="{{root}}/static/img/preview-1200x630.png">
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": {{ name|tojson }},
+        "url": {{ root|tojson }},
+        "description": {{ description|tojson }}
+      },
+      {
+        "@type": "Organization",
+        "name": {{ author|tojson }},
+        "url": {{ root|tojson }},
+        "logo": {{ (root ~ "/static/img/logo-512.png")|tojson }}
+      }
+    ]
+  }
+  </script>
+
   <link rel="icon" href="{{root}}/static/img/favicon.ico" type="image/x-icon">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
 
   {% if css %}
   {% for file in css %}
@@ -38,10 +63,4 @@
   <script src="{{root}}/static/js/{{file}}.js" defer></script>
   {% endfor %}
   {% endif %}
-
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-    }
-  </script>
 </head>

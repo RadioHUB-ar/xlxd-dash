@@ -25,6 +25,8 @@
     "xml": "/var/log/xlxd/xlxd.xml",
     "pidfile": "/run/xlxd.pid",
     "apiURL": "http://xlxapi.rlx.lu/api.php",
+    "offline_time": 2400,
+    "ref_cache_ttl": 60,
     "callhome": false
   }
 }

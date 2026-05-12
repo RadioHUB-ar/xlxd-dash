@@ -1,9 +1,12 @@
 const users_table = document.getElementById("users_table");
 const nodes_table = document.getElementById("nodes_table");
+const peers_table = document.getElementById("peers_table");
 const toggleRefresh = document.getElementById("toggle-refresh");
 const toggleUserDetail = document.getElementById("toggle-user_detail");
 const uptimeEl = document.getElementById("server_uptime");
 const toggleUTC = document.getElementById("toggle-utc");
+const dataStatus = document.getElementById("data_status");
+const dataStatusMessage = document.getElementById("data_status_message");
 
 function actualizarUptime() {
   uptime += 1;
@@ -13,14 +16,29 @@ uptimeEl.textContent = secondsToDhms(uptime);
 setInterval(actualizarUptime, 1000);
 
 function loadData() {
-  const uniq = []
-  rowClassName = ""
+  const uniq = [];
   fetch("/get_data")
     .then(res => res.json())
     .then(data => {
-      num = 1
-      exec = true;
       users_table.innerHTML = "";
+      nodes_table.innerHTML = "";
+      peers_table.innerHTML = "";
+      document.getElementById("users_div").classList.add("hidden");
+      document.getElementById("nodes_div").classList.add("hidden");
+      document.getElementById("peers_div").classList.add("hidden");
+      document.getElementById("nodesIP").classList.remove("md:table-cell");
+      document.getElementById("peersIP").classList.remove("md:table-cell");
+
+      if (!data.available) {
+        dataStatus.classList.remove("hidden");
+        dataStatusMessage.textContent = data.message || "No XLXD data available.";
+        return;
+      }
+
+      dataStatus.classList.add("hidden");
+
+      let num = 1;
+      let exec = true;
       const usuarios = Object.values(data.heard_users || {});
       // console.log(data)
 
@@ -30,8 +48,9 @@ function loadData() {
           exec = false;
         }
 
-        uniqueness = `${item.Call}`;
+        const uniqueness = `${item.Call}`;
         // uniqueness = `${item.Call}${item.Suffix}`;
+        let rowClassName = "";
         if ( uniq.includes(uniqueness) ) {
           if (user_data_detail) {
             rowClassName = "user_row";
@@ -102,10 +121,9 @@ function loadData() {
         users_table.appendChild(row);
       });
 
-      num = 1
+      num = 1;
       exec = true;
-      showIP = false;
-      nodes_table.innerHTML = "";
+      let showIP = false;
       const nodes = Object.values(data.linked_nodes || {});
 
       nodes.forEach(item => {
@@ -171,10 +189,9 @@ function loadData() {
       });
 
 
-      num = 1
+      num = 1;
       exec = true;
       showIP = false;
-      peers_table.innerHTML = "";
       const peers = Object.values(data.linked_peers || {});
 
       peers.forEach(item => {

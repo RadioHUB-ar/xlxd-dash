@@ -1,10 +1,10 @@
-from flask import request, send_from_directory, Response, render_template
+from flask import request, Response, render_template
 from xlxd_dash import app
 from xlxd_dash.callhome import do_callhome
 from xlxd_dash.xml import json_load
 from xlxd_dash.xlxd import xlxd_data
 from xlxd_dash import dash_version, config
-from xlxd_dash.refXML import ref_json
+from xlxd_dash.refXML import get_ref as find_ref, ref_list as get_reflectors
 
 @app.route("/index.php")
 @app.route("/")
@@ -49,7 +49,20 @@ def ref_list():
 
 @app.route("/getreflist")
 def get_ref_list():
-    return ref_json()
+    return get_reflectors()
+
+@app.route("/getref")
+def get_ref():
+    ref_id = request.args.get("id", "").upper()
+
+    if not ref_id:
+        return {"error": "missing id"}, 400
+
+    item = find_ref(ref_id)
+    if item:
+        return item
+
+    return {"error": "reflector not found", "id": ref_id}, 404
 
 @app.route("/get_data")
 def get_data():
@@ -72,17 +85,25 @@ def get_node():
                 for entry in linked_nodes:
                     if entry.get("Callsign") == call and entry.get("Protocol") == proto:
                         return {"running": True}
-    except:
-        pass
+    except Exception as e:
+        print(f"Error getting node status: {e}")
     return {"running": False}
 
 @app.route("/robots.txt")
 def robots():
-    return send_from_directory("static", "robots.txt")
+    root = config['service']['dashURL'].rstrip('/')
+    return Response(
+        render_template("robots.txt.j2", root=root),
+        mimetype="text/plain"
+    )
 
 @app.route("/sitemap.xml")
 def sitemap():
-    return send_from_directory("static", "sitemap.xml")
+    root = config['service']['dashURL'].rstrip('/')
+    return Response(
+        render_template("sitemap.xml.j2", root=root),
+        mimetype="application/xml"
+    )
 
 @app.route("/manifest.json")
 def manifestjson():

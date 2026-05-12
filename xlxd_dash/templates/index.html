@@ -14,6 +14,10 @@
       <script>
         uptime = {{uptime}}
       </script>
+      <div id="data_status" class="hidden border border-gray-300 dark:border-gray-700 bg-gray-100 dark:bg-gray-800 px-4 py-3 text-sm">
+        <div class="font-semibold">XLXD data unavailable</div>
+        <div id="data_status_message" class="text-gray-600 dark:text-gray-300 mt-1"></div>
+      </div>
       {% if modules %}
       <div id="modules_div" class="overflow-x-auto">
         <table class="w-full table-auto border border-gray-300 dark:border-gray-700 text-sm">
